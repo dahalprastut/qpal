@@ -1,0 +1,50 @@
+body {
+  margin: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: lightblue;
+  position: relative; }
+  .container .items {
+    width: 200%;
+    height: 200%;
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .container .boxes {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0%;
+    left: 0%; }
+    .container .boxes .box {
+      width: 20%;
+      height: 20%;
+      background: lightblue;
+      transition: 0.5s; }
+  .container #first {
+    background: red; }
+  .container #second {
+    background: green;
+    transform: translate(100%, 0%); }
+  .container #third {
+    background: blue;
+    text-align: center;
+    transform: translate(0, 100%); }
+  .container #fourth {
+    background: pink;
+    transform: translate(100%, 100%); }
+
+/*# sourceMappingURL=style.css.map */

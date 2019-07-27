@@ -1,0 +1,20 @@
+{
+   'name': 'qpal',
+   'dependencies':{
+	'scrollr.js'
+    }
+
+
+
+<!--   
+	additional information :
+	{
+
+	'gitRepository' : ''
+
+	}
+
+
+
+
+ -->
