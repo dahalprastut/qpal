@@ -44,8 +44,7 @@ body{
        position: fixed;
        top:0;
        left: 0;
-        // background: url('../images/background.png') center center no-repeat ;
-        background: black;
+        background: url('../images/background.png') center center no-repeat ;
         
        
    }
@@ -60,7 +59,7 @@ body{
    }
 
    #first{
-       background: red;
+    //    background: red;
        display: flex;
        align-items:center;
        justify-content: space-between;
@@ -70,7 +69,7 @@ body{
        .main-information{
            margin-top:100px;
            align-self: flex-start;
-           margin-right: 50px;
+           margin-right: 80px;
            margin-left: 0px;
            h1{
                color: #fff;
@@ -91,6 +90,8 @@ body{
                 a:last-child{
                     margin-left: 40px;
                 }
+
+            
             }
        }
     

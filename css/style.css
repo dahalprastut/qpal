@@ -22,7 +22,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: black; }
+    background: url("../images/background.png") center center no-repeat; }
   .container .boxes {
     width: 50%;
     height: 50%;
@@ -31,14 +31,13 @@ body {
     left: 0%;
     background-size: cover; }
   .container #first {
-    background: red;
     display: flex;
     align-items: center;
     justify-content: space-between; }
     .container #first .main-information {
       margin-top: 100px;
       align-self: flex-start;
-      margin-right: 50px;
+      margin-right: 80px;
       margin-left: 0px; }
       .container #first .main-information h1 {
         color: #fff;
