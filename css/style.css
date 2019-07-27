@@ -15,36 +15,54 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: lightblue;
   position: relative; }
   .container .items {
     width: 200%;
     height: 200%;
     position: fixed;
     top: 0;
-    left: 0; }
+    left: 0;
+    background: black; }
   .container .boxes {
     width: 50%;
     height: 50%;
     position: absolute;
     top: 0%;
-    left: 0%; }
-    .container .boxes .box {
-      width: 20%;
-      height: 20%;
-      background: lightblue;
-      transition: 0.5s; }
+    left: 0%;
+    background-size: cover; }
   .container #first {
-    background: red; }
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .container #first .main-information {
+      margin-top: 100px;
+      align-self: flex-start;
+      margin-right: 50px;
+      margin-left: 0px; }
+      .container #first .main-information h1 {
+        color: #fff;
+        font-size: 100px; }
+      .container #first .main-information p {
+        color: #000;
+        font-size: 33px;
+        margin-top: 30px; }
+      .container #first .main-information .wrapper-button {
+        margin-top: 140px;
+        display: flex;
+        justify-content: flex-start; }
+        .container #first .main-information .wrapper-button a:last-child {
+          margin-left: 40px; }
   .container #second {
     background: green;
     transform: translate(100%, 0%); }
   .container #third {
     background: blue;
-    text-align: center;
-    transform: translate(0, 100%); }
+    transform: translate(200%, 0%); }
   .container #fourth {
     background: pink;
-    transform: translate(100%, 100%); }
+    transform: translate(300%, 0%); }
+  .container #fifth {
+    transform: translate(400%, 0%); }
 
 /*# sourceMappingURL=style.css.map */

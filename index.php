@@ -8,32 +8,41 @@
         <div class="container">
             <div class="items"
             data-0="transform: translate(0%, 0%)"
-            data-100p="transform: translate(0%, -50%)"
-            data-200p="transform: translate(-50%, -50%)"
-            data-300p="transform: translate(-50%, 0%)"
-            data-600p="transform: translate(-50%, 0%)"
+            data-100p="transform: translate(-50%, 0%)"
+            data-200p="transform: translate(-100%, 0%)"
+            data-300p="transform: translate(-150%, 0%)"
+            data-400p="transform: translate(-200%, 0%)"
             >
                 <div class="boxes" id="first">
-                    adf
+                    <div class="mobile-first">
+                        <img src="images/mobile-first.png" alt="mobile">
+                    </div>
+
+                    <div class="main-information">
+                        <h1>Qpal</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, vitae suscipit. Quisquam rerum aspernatur sequi repellat modi corporis. Sed, consequuntur.</p>
+                        <div class="wrapper-button">
+                            <a href="#" class="btn">
+                                <img src="images/google.png" alt="playstore">
+                            </a>
+                            <a href="#" class="btn">
+                                <img src="images/google.png" alt="appstore">
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="boxes" id="second">
-                    adf
+                    second
                 </div>
                 <div class="boxes" id="third" >
-                    <div class="box"
-                    data-0="opacity:0; transform: translate(0%, 0%)"
-                    data-50p="opacity:1; transform: translate(250%, 0%)"
-                    data-100p="opacity:1; transform: translate(400%, 0%)"
-                 
-                    
-                    >
-                    ff
-                    </div>
+                    adsfcc
                 </div>
                 <div class="boxes" id="fourth">
-                    <div    class="text">
-                        this will come slowly
-                    </div>
+                    lll
+
+                </div>
+                <div class="boxes" id="fifth">
+                    fifth
 
                 </div>
             </div>
