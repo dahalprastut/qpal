@@ -1,11 +1,14 @@
 
 // common information
 
-$paragraph: 33px;
+$paragraph: 34px;
+
+$primary-color: #3b6dcc;
 
 
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 *{
@@ -64,6 +67,12 @@ body{
        align-items:center;
        justify-content: space-between;
 
+       .mobile-first{
+           transition: 1s;
+           -webkit-transition: 1s;
+           margin-left: -800px;
+       }
+
   
 
        .main-information{
@@ -71,9 +80,13 @@ body{
            align-self: flex-start;
            margin-right: 80px;
            margin-left: 0px;
+           transition: 1s;
+           -webkit-transition: 1s;
+           opacity: 0;
            h1{
                color: #fff;
                font-size: 100px;
+               letter-spacing: 1px;
            }
 
            p{
@@ -86,6 +99,7 @@ body{
                 margin-top: 140px;
                 display: flex;
                 justify-content: flex-start;
+              
 
                 a:last-child{
                     margin-left: 40px;
@@ -98,8 +112,37 @@ body{
        }
 
    #second{
-       background: green;
+    //    background: green;
        transform: translate(100% , 0%);
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+        .persons{
+            justify-content: flex-start;
+        }
+
+        .main-problems{
+            // align-self: flex-start;
+            margin-right: 80px;
+            width: 800px;
+            margin-left: 0px;
+            transition: 1s;
+            -webkit-transition: 1s;
+
+            h2{
+                color: $primary-color;
+                font-size: 100px;
+                letter-spacing:1px;
+            }
+
+            p{
+                color: #000;
+                font-size: $paragraph;
+                margin-top: 30px;
+            }
+        }
+
     }
     #third{
         background: blue;

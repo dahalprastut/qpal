@@ -10,7 +10,9 @@
 	additional information :
 	{
 
-	'gitRepository' : ''
+	'gitRepository' : 'https://github.com/dahalprastut/qpal',
+	'h1fontsize' : '100px',
+	'pfontsize' : '34px'
 
 	}
 
