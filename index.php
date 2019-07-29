@@ -34,17 +34,25 @@
                 </div>
                 <div class="boxes" id="second">
                     <div class="persons">
-                        <img src="images/person3.png" alt="person3">
-                        <img src="images/person1.png" alt="person1">
-                        <img src="images/person2.png" alt="person2">
-                        <img src="images/counter.png" alt="counter">
+                        <img id="image-3" src="images/person3.png" alt="person3">
+                        <img id="image-2" src="images/person1.png" alt="person2">
+                        <img id="image-1" src="images/person2.png" alt="person1">
+                        <img id="image-4" src="images/counter.png" alt="counter">
                         
                     </div>
 
 
                     <div class="main-problems">
-                        <h2>Problem</h2>
                         <div class="problem-1">
+                            <h2>Problem</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente necessitatibus alias eaque fugiat. Provident consequuntur animi praesentium natus, pariatur illo.</p>
+                        </div>
+                        <div class="problem-2">
+                            <h2>Majja ayenani?</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente necessitatibus alias eaque fugiat. Provident consequuntur animi praesentium natus, pariatur illo.</p>
+                        </div>
+                        <div class="problem-3">
+                            <h2>Majja aaudo raicha ta?</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente necessitatibus alias eaque fugiat. Provident consequuntur animi praesentium natus, pariatur illo.</p>
                         </div>
                     </div>

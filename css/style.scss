@@ -119,7 +119,33 @@ body{
        justify-content: space-between;
 
         .persons{
-            justify-content: flex-start;
+            position: relative;
+
+            img{
+                position: absolute;
+                top: -100px;
+                left: 40px;
+                transition: 1s;
+                -webkit-transition: 1s;
+
+
+            }
+
+      
+
+            #image-2{
+                left: 140px;
+            }
+
+            #image-1{
+                left: 250px;
+            }
+
+            #image-4{
+                left: 370px;
+            }
+
+
         }
 
         .main-problems{
@@ -141,6 +167,17 @@ body{
                 font-size: $paragraph;
                 margin-top: 30px;
             }
+
+      
+
+            .problem-1,.problem-2,.problem-3{
+                transition: 1s;
+                -webkit-transition: 1s;
+            }
+
+            .problem-2,.problem-3{
+               display: none;
+            }
         }
 
     }
@@ -160,6 +197,6 @@ body{
    }
 }
 
-// ::-webkit-scrollbar { 
-//     display: none; 
-// }
+::-webkit-scrollbar { 
+    display: none; 
+}
