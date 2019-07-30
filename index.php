@@ -11,8 +11,9 @@
             data-100p="transform: translate(-50%, 0%)"
             data-300p = ""
             data-500p="transform: translate(-100%, 0%)"
-            data-600p="transform: translate(-150%, 0%)"
-            data-700p="transform: translate(-200%, 0%)"
+            data-900p = ""
+            data-1000p="transform: translate(-150%, 0%)"
+            data-1100p="transform: translate(-200%, 0%)"
             >
                 <div class="boxes" id="first">
                     <div class="mobile-first">
@@ -58,7 +59,24 @@
                     </div>
                 </div>
                 <div class="boxes" id="third" >
-                    adsfcc
+                    <div class="absolute-images">
+
+                        
+                        <div class="first-image">
+                            <img src="images/jump.png" alt="Jump">
+                        </div>
+
+                        <div class="second-image">
+                            <img src="images/magic-mobile.png" alt="mobile">
+                        </div>
+                    </div>
+
+                    <div class="absolute-description">
+                        <div class="first-description">
+                            <h2>Introducting Qpal</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid maxime nobis totam, consequuntur ut cum obcaecati sunt sapiente corrupti laboriosam.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="boxes" id="fourth">
                     lll

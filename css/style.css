@@ -7,6 +7,9 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
+img {
+  display: block; }
+
 .clearfix::after {
   content: '';
   display: block;
@@ -100,15 +103,42 @@ body {
       .container #second .main-problems .problem-2, .container #second .main-problems .problem-3 {
         display: none; }
   .container #third {
-    background: blue;
-    transform: translate(200%, 0%); }
+    background: url("../images/background.png") center center no-repeat;
+    transform: translate(200%, 0%);
+    position: relative; }
+    .container #third .absolute-images .first-image {
+      position: absolute;
+      top: 25%;
+      left: 12%;
+      transition: 2s;
+      -webkit-transition: 2s; }
+      .container #third .absolute-images .first-image img {
+        height: 400px; }
+    .container #third .absolute-images .second-image {
+      position: absolute;
+      top: 10%;
+      left: 3%;
+      transition: 2s;
+      -webkit-transition: 2s; }
+      .container #third .absolute-images .second-image img {
+        height: 500px; }
+    .container #third .absolute-description .first-description {
+      position: absolute;
+      top: 29%;
+      right: 10%;
+      width: 800px; }
+      .container #third .absolute-description .first-description h2 {
+        color: #3b6dcc;
+        font-size: 100px;
+        letter-spacing: 1px; }
+      .container #third .absolute-description .first-description p {
+        color: #000;
+        font-size: 34px;
+        margin-top: 30px; }
   .container #fourth {
     background: pink;
     transform: translate(300%, 0%); }
   .container #fifth {
     transform: translate(400%, 0%); }
-
-::-webkit-scrollbar {
-  display: none; }
 
 /*# sourceMappingURL=style.css.map */

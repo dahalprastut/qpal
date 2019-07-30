@@ -35,6 +35,14 @@ var problemTwo = document.querySelector('.problem-2');
 var problemThree = document.querySelector('.problem-3');
 
 
+// for third sectin variable
+
+
+var magicMobile = document.querySelector('.second-image');
+
+var jumping = document.querySelector('.first-image');
+
+
 window.addEventListener('scroll' , (event)=>{
     console.log('event' , window.scrollY);
     if(window.scrollY >= 1288 && window.scrollY < 2200){
@@ -72,6 +80,19 @@ window.addEventListener('scroll' , (event)=>{
         problemTwo.style = 'display:none';
         problemThree.style = 'display:block';
     }
+
+    if(window.scrollY >= 4960){
+        console.log(magicMobile, jumping);
+        magicMobile.style='opacity: 1 ;top:25%;left:12%; ';
+        jumping.style=' opacity:0; top:40%; left:3%';
+    }
+
+    if(window.scrollY < 4960){
+        console.log(magicMobile, jumping);
+        jumping.style=' opacity: 1; top:25%;left:12%;';
+        magicMobile.style='opacity:0; top:10%; left:3%; ';
+    }
+
 
 
 });
