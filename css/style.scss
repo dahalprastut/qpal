@@ -50,7 +50,7 @@ img{
        position: fixed;
        top:0;
        left: 0;
-        background: url('../images/background.png') center center no-repeat ;
+        // background: url('../images/background.png') center center no-repeat ;
         
        
    }
@@ -69,6 +69,7 @@ img{
        display: flex;
        align-items:center;
        justify-content: space-between;
+       background: url('../images/section-1.jpg') center center no-repeat;
 
        .mobile-first{
            transition: 1s;
@@ -120,6 +121,8 @@ img{
        display: flex;
        align-items: center;
        justify-content: space-between;
+       background: url('../images/section-2.jpg') center center no-repeat;
+       
 
         .persons{
             position: relative;
@@ -186,9 +189,11 @@ img{
     }
     #third{
         // background: blue;
-        background: url('../images/background.png') center center no-repeat ;
+        // background: url('../images/background.png') center center no-repeat ;
        transform: translate(200% , 0%);
         position: relative;
+       background: url('../images/section-3.jpg') center center no-repeat;
+        
 
         .absolute-images{
             .first-image{
@@ -215,20 +220,37 @@ img{
                 // visibility: hidden;
 
                 img{
-                    height: 500px;
+                    height: 700px;
+                }
+            }
+
+
+            .third-image{
+                position: absolute;
+                top: 10%;
+                left: 3%;
+                transition: 2s;
+                -webkit-transition: 2s;
+                // opacity:0;
+                // visibility: hidden;
+
+                img{
+                    height: 700px;
                 }
             }
         }
 
         .absolute-description{
-            .first-description{
+            .first-description, .second-description, .third-description{
                 position: absolute;
                 top: 29%;
                 right: 10%;
                 width: 800px;
+                transition: 2s;
+                -webkit-transition: 2s;
 
                 h2{
-                    color: $primary-color;
+                    color: $secondary-color;
                     font-size: 100px;
                     letter-spacing:1px;
                 }
@@ -239,13 +261,19 @@ img{
                     margin-top: 30px;
                 }
             }
+
+            .second-description{
+                // opacity:0;
+            }
         }
 
    }
 
    #fourth{
-        background: pink;
+        // background: pink;
         transform: translate(300% , 0%);
+       background: url('../images/section-4.jpg') center center no-repeat;
+        
    }
 
    #fifth{

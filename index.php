@@ -67,7 +67,11 @@
                         </div>
 
                         <div class="second-image">
-                            <img src="images/magic-mobile.png" alt="mobile">
+                            <img src="images/splash_1.png" alt="mobile">
+                        </div>
+
+                        <div class="third-image">
+                            <img src="images/signup.png" alt="mobile">
                         </div>
                     </div>
 
@@ -75,6 +79,16 @@
                         <div class="first-description">
                             <h2>Introducting Qpal</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid maxime nobis totam, consequuntur ut cum obcaecati sunt sapiente corrupti laboriosam.</p>
+                        </div>
+
+                        <div class="second-description">
+                            <h2>New Definition for Queue</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
+                        </div>
+
+                        <div class="third-description">
+                            <h2>Old Definition for Queue</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
                     </div>
                 </div>

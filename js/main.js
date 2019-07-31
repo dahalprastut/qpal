@@ -39,8 +39,14 @@ var problemThree = document.querySelector('.problem-3');
 
 
 var magicMobile = document.querySelector('.second-image');
-
 var jumping = document.querySelector('.first-image');
+var secondMagicMobile = document.querySelector('.third-image');
+
+
+var firstDescription = document.querySelector('.first-description');
+var secondDescription = document.querySelector('.second-description');
+var thirdDescription = document.querySelector('.third-description');
+
 
 
 window.addEventListener('scroll' , (event)=>{
@@ -71,8 +77,7 @@ window.addEventListener('scroll' , (event)=>{
     }
 
     if(window.scrollY >= 2200){
-        console.log('greter');
-        // alert('hit');
+      
         imageTwo.style='opacity:0; left:250px';
         imageThree.style = "left:250px"
 
@@ -81,17 +86,59 @@ window.addEventListener('scroll' , (event)=>{
         problemThree.style = 'display:block';
     }
 
+
+    // third
+
+
     if(window.scrollY >= 4960){
-        console.log(magicMobile, jumping);
-        magicMobile.style='opacity: 1 ;top:25%;left:12%; ';
+        magicMobile.style='opacity: 1 ;top:20%;left:8%; ';
         jumping.style=' opacity:0; top:40%; left:3%';
+        secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+
+        firstDescription.style='opacity:0;'
+        secondDescription.style='opacity:1;'
+        thirdDescription.style='opacity:0';
+      
     }
 
     if(window.scrollY < 4960){
-        console.log(magicMobile, jumping);
-        jumping.style=' opacity: 1; top:25%;left:12%;';
+        jumping.style=' opacity: 1; top:20%;left:8%;';
         magicMobile.style='opacity:0; top:10%; left:3%; ';
+        secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+        
+
+
+        firstDescription.style='opacity:1;'
+        secondDescription.style='opacity:0;'
+        thirdDescription.style='opacity:0';
+        
     }
+
+
+    if(window.scrollY >= 5660 && window.scrollY >= 4960){
+        console.log(magicMobile, jumping);
+        secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+        jumping.style=' opacity:0; top:40%; left:3%';
+        magicMobile.style=' opacity:0; top:40%; left:3%';
+
+
+        firstDescription.style='opacity:0;'
+        secondDescription.style='opacity:0;'
+        thirdDescription.style='opacity:1;'
+      
+      
+    }
+
+    if(window.scrollY < 5660 && window.scrollY >=4960){
+        magicMobile.style=' opacity: 1; top:20%;left:8%;';
+        secondMagicMobile.style='opacity:0; top:10%; left:3%; ';
+        jumping.style=' opacity:0; top:40%; left:3%';
+
+        firstDescription.style='opacity:0;'
+        secondDescription.style='opacity:1;'
+        thirdDescription.style='opacity:0;'
+    }
+
 
 
 

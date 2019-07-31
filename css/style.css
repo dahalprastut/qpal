@@ -25,8 +25,7 @@ img {
     height: 200%;
     position: fixed;
     top: 0;
-    left: 0;
-    background: url("../images/background.png") center center no-repeat; }
+    left: 0; }
   .container .boxes {
     width: 50%;
     height: 50%;
@@ -37,7 +36,8 @@ img {
   .container #first {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    background: url("../images/section-1.jpg") center center no-repeat; }
     .container #first .mobile-first {
       transition: 1s;
       -webkit-transition: 1s;
@@ -68,7 +68,8 @@ img {
     transform: translate(100%, 0%);
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    background: url("../images/section-2.jpg") center center no-repeat; }
     .container #second .persons {
       position: relative; }
       .container #second .persons img {
@@ -103,9 +104,9 @@ img {
       .container #second .main-problems .problem-2, .container #second .main-problems .problem-3 {
         display: none; }
   .container #third {
-    background: url("../images/background.png") center center no-repeat;
     transform: translate(200%, 0%);
-    position: relative; }
+    position: relative;
+    background: url("../images/section-3.jpg") center center no-repeat; }
     .container #third .absolute-images .first-image {
       position: absolute;
       top: 25%;
@@ -121,23 +122,33 @@ img {
       transition: 2s;
       -webkit-transition: 2s; }
       .container #third .absolute-images .second-image img {
-        height: 500px; }
-    .container #third .absolute-description .first-description {
+        height: 700px; }
+    .container #third .absolute-images .third-image {
+      position: absolute;
+      top: 10%;
+      left: 3%;
+      transition: 2s;
+      -webkit-transition: 2s; }
+      .container #third .absolute-images .third-image img {
+        height: 700px; }
+    .container #third .absolute-description .first-description, .container #third .absolute-description .second-description, .container #third .absolute-description .third-description {
       position: absolute;
       top: 29%;
       right: 10%;
-      width: 800px; }
-      .container #third .absolute-description .first-description h2 {
-        color: #3b6dcc;
+      width: 800px;
+      transition: 2s;
+      -webkit-transition: 2s; }
+      .container #third .absolute-description .first-description h2, .container #third .absolute-description .second-description h2, .container #third .absolute-description .third-description h2 {
+        color: #fff;
         font-size: 100px;
         letter-spacing: 1px; }
-      .container #third .absolute-description .first-description p {
+      .container #third .absolute-description .first-description p, .container #third .absolute-description .second-description p, .container #third .absolute-description .third-description p {
         color: #000;
         font-size: 34px;
         margin-top: 30px; }
   .container #fourth {
-    background: pink;
-    transform: translate(300%, 0%); }
+    transform: translate(300%, 0%);
+    background: url("../images/section-4.jpg") center center no-repeat; }
   .container #fifth {
     transform: translate(400%, 0%); }
 
