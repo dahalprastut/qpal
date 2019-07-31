@@ -37,7 +37,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url("../images/section-1.jpg") center center no-repeat; }
+    background: url("../images/section-1.jpg") center center no-repeat;
+    background-size: cover; }
     .container #first .mobile-first {
       transition: 1s;
       -webkit-transition: 1s;
@@ -69,21 +70,23 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url("../images/section-2.jpg") center center no-repeat; }
+    background: url("../images/section-2.jpg") center center no-repeat;
+    background-size: cover; }
     .container #second .persons {
       position: relative; }
       .container #second .persons img {
         position: absolute;
-        top: -100px;
-        left: 40px;
+        top: -200px;
+        left: 60px;
         transition: 1s;
-        -webkit-transition: 1s; }
+        -webkit-transition: 1s;
+        height: 400px; }
       .container #second .persons #image-2 {
-        left: 140px; }
+        left: 160px; }
       .container #second .persons #image-1 {
-        left: 250px; }
+        left: 320px; }
       .container #second .persons #image-4 {
-        left: 370px; }
+        left: 460px; }
     .container #second .main-problems {
       margin-right: 80px;
       width: 800px;
@@ -106,50 +109,53 @@ img {
   .container #third {
     transform: translate(200%, 0%);
     position: relative;
-    background: url("../images/section-3.jpg") center center no-repeat; }
+    background: url("../images/section-3.jpg") center center no-repeat;
+    background-size: cover; }
     .container #third .absolute-images .first-image {
       position: absolute;
-      top: 25%;
-      left: 12%;
       transition: 2s;
       -webkit-transition: 2s; }
       .container #third .absolute-images .first-image img {
-        height: 400px; }
+        height: 600px; }
     .container #third .absolute-images .second-image {
       position: absolute;
-      top: 10%;
-      left: 3%;
       transition: 2s;
       -webkit-transition: 2s; }
       .container #third .absolute-images .second-image img {
         height: 700px; }
     .container #third .absolute-images .third-image {
       position: absolute;
-      top: 10%;
-      left: 3%;
       transition: 2s;
       -webkit-transition: 2s; }
       .container #third .absolute-images .third-image img {
         height: 700px; }
-    .container #third .absolute-description .first-description, .container #third .absolute-description .second-description, .container #third .absolute-description .third-description {
+    .container #third .absolute-images .fourth-image {
+      position: absolute;
+      transition: 2s;
+      -webkit-transition: 2s; }
+      .container #third .absolute-images .fourth-image img {
+        height: 600px; }
+    .container #third .absolute-description .first-description, .container #third .absolute-description .second-description, .container #third .absolute-description .third-description, .container #third .absolute-description .fourth-description {
       position: absolute;
       top: 29%;
       right: 10%;
       width: 800px;
       transition: 2s;
       -webkit-transition: 2s; }
-      .container #third .absolute-description .first-description h2, .container #third .absolute-description .second-description h2, .container #third .absolute-description .third-description h2 {
+      .container #third .absolute-description .first-description h2, .container #third .absolute-description .second-description h2, .container #third .absolute-description .third-description h2, .container #third .absolute-description .fourth-description h2 {
         color: #fff;
         font-size: 100px;
         letter-spacing: 1px; }
-      .container #third .absolute-description .first-description p, .container #third .absolute-description .second-description p, .container #third .absolute-description .third-description p {
+      .container #third .absolute-description .first-description p, .container #third .absolute-description .second-description p, .container #third .absolute-description .third-description p, .container #third .absolute-description .fourth-description p {
         color: #000;
         font-size: 34px;
         margin-top: 30px; }
   .container #fourth {
     transform: translate(300%, 0%);
-    background: url("../images/section-4.jpg") center center no-repeat; }
-  .container #fifth {
-    transform: translate(400%, 0%); }
+    background: url("../images/section-4.jpg") center center no-repeat;
+    background-size: cover; }
+
+::-webkit-scrollbar {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

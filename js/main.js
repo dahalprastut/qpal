@@ -38,14 +38,16 @@ var problemThree = document.querySelector('.problem-3');
 // for third sectin variable
 
 
-var magicMobile = document.querySelector('.second-image');
 var jumping = document.querySelector('.first-image');
+var magicMobile = document.querySelector('.second-image');
 var secondMagicMobile = document.querySelector('.third-image');
+var problem = document.querySelector('.fourth-image');
 
 
 var firstDescription = document.querySelector('.first-description');
 var secondDescription = document.querySelector('.second-description');
 var thirdDescription = document.querySelector('.third-description');
+var fourthDescription = document.querySelector('.fourth-description');
 
 
 
@@ -54,8 +56,8 @@ window.addEventListener('scroll' , (event)=>{
     if(window.scrollY >= 1288 && window.scrollY < 2200){
         console.log('greter');
         imageOne.style='opacity:0;';
-        imageTwo.style = "left:250px"
-        imageThree.style = "left:140px"
+        imageTwo.style = "left:320px"
+        imageThree.style = "left:160px"
 
         problemTwo.style = 'display:block';
         problemOne.style = 'display:none';
@@ -67,8 +69,8 @@ window.addEventListener('scroll' , (event)=>{
         console.log('greter');
 
         imageOne.style='opacity:1';
-        imageTwo.style = "left:140px"
-        imageThree.style = "left:40px"
+        imageTwo.style = "left:160px"
+        imageThree.style = "left:60px"
         
 
         problemOne.style = 'display:block';
@@ -78,8 +80,8 @@ window.addEventListener('scroll' , (event)=>{
 
     if(window.scrollY >= 2200){
       
-        imageTwo.style='opacity:0; left:250px';
-        imageThree.style = "left:250px"
+        imageTwo.style='opacity:0; left:320px';
+        imageThree.style = "left:320px"
 
         problemOne.style = 'display:none';
         problemTwo.style = 'display:none';
@@ -90,14 +92,20 @@ window.addEventListener('scroll' , (event)=>{
     // third
 
 
-    if(window.scrollY >= 4960){
-        magicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+    if(window.scrollY >= 4960 && window.scrollY < 5660){
+
+        
         jumping.style=' opacity:0; top:40%; left:3%';
         secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+        magicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+
+
+        problem.style ='opacity:0; top:10%; left:3%';
 
         firstDescription.style='opacity:0;'
         secondDescription.style='opacity:1;'
         thirdDescription.style='opacity:0';
+        fourthDescription.style='opacity:0';
       
     }
 
@@ -105,26 +113,37 @@ window.addEventListener('scroll' , (event)=>{
         jumping.style=' opacity: 1; top:20%;left:8%;';
         magicMobile.style='opacity:0; top:10%; left:3%; ';
         secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+
+        problem.style ='opacity:0; top:10%; left:3%';
+        
         
 
 
         firstDescription.style='opacity:1;'
         secondDescription.style='opacity:0;'
         thirdDescription.style='opacity:0';
+        fourthDescription.style='opacity:0';
+        
         
     }
 
+    // 
+
 
     if(window.scrollY >= 5660 && window.scrollY >= 4960){
-        console.log(magicMobile, jumping);
         secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
         jumping.style=' opacity:0; top:40%; left:3%';
         magicMobile.style=' opacity:0; top:40%; left:3%';
 
+        problem.style ='opacity:0; top:10%; left:3%';
+        
 
-        firstDescription.style='opacity:0;'
+
+    firstDescription.style='opacity:0;'
         secondDescription.style='opacity:0;'
         thirdDescription.style='opacity:1;'
+        fourthDescription.style='opacity:0';
+        
       
       
     }
@@ -134,9 +153,51 @@ window.addEventListener('scroll' , (event)=>{
         secondMagicMobile.style='opacity:0; top:10%; left:3%; ';
         jumping.style=' opacity:0; top:40%; left:3%';
 
+        problem.style ='opacity:0; top:10%; left:3%';
+        
+
         firstDescription.style='opacity:0;'
         secondDescription.style='opacity:1;'
         thirdDescription.style='opacity:0;'
+        fourthDescription.style='opacity:0';
+        
+    }
+
+    // 
+
+    if(window.scrollY >= 6300 && window.scrollY >= 5660){
+
+        secondMagicMobile.style='opacity: 0 ;top:40%;left:3%; ';
+        jumping.style=' opacity:0; top:40%; left:3%';
+        magicMobile.style=' opacity:0; top:40%; left:3%';
+
+        problem.style ='opacity:1; top:20%; left:8%';
+
+        
+        firstDescription.style='opacity:0;'
+        secondDescription.style='opacity:0;'
+        thirdDescription.style='opacity:0;'
+        fourthDescription.style='opacity:1';
+
+    }
+
+    if(window.scrollY < 6300 && window.scrollY >= 5660){
+
+        secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+        jumping.style=' opacity:0; top:40%; left:3%';
+        magicMobile.style=' opacity:0; top:40%; left:3%';
+
+        problem.style ='opacity:0; top:10%; left:3%';
+
+        firstDescription.style='opacity:0;'
+        secondDescription.style='opacity:0;'
+        thirdDescription.style='opacity:1;'
+        fourthDescription.style='opacity:0';
+        
+
+
+ 
+
     }
 
 

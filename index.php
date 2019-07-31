@@ -11,9 +11,8 @@
             data-100p="transform: translate(-50%, 0%)"
             data-300p = ""
             data-500p="transform: translate(-100%, 0%)"
-            data-900p = ""
-            data-1000p="transform: translate(-150%, 0%)"
-            data-1100p="transform: translate(-200%, 0%)"
+            data-800p = ""
+            data-900p="transform: translate(-150%, 0%)"
             >
                 <div class="boxes" id="first">
                     <div class="mobile-first">
@@ -73,6 +72,11 @@
                         <div class="third-image">
                             <img src="images/signup.png" alt="mobile">
                         </div>
+
+
+                        <div class="fourth-image">
+                            <img src="images/what.png" alt="question">
+                        </div>
                     </div>
 
                     <div class="absolute-description">
@@ -90,16 +94,21 @@
                             <h2>Old Definition for Queue</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
+
+                        <div class="fourth-description">
+                            <h2>How it works?</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="boxes" id="fourth">
                     lll
 
                 </div>
-                <div class="boxes" id="fifth">
+                <!-- <div class="boxes" id="fifth">
                     fifth
 
-                </div>
+                </div> -->
             </div>
         </div>
 

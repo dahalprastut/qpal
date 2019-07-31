@@ -70,6 +70,7 @@ img{
        align-items:center;
        justify-content: space-between;
        background: url('../images/section-1.jpg') center center no-repeat;
+       background-size: cover;
 
        .mobile-first{
            transition: 1s;
@@ -122,6 +123,8 @@ img{
        align-items: center;
        justify-content: space-between;
        background: url('../images/section-2.jpg') center center no-repeat;
+       background-size: cover;
+       
        
 
         .persons{
@@ -129,10 +132,11 @@ img{
 
             img{
                 position: absolute;
-                top: -100px;
-                left: 40px;
+                top: -200px;
+                left: 60px;
                 transition: 1s;
                 -webkit-transition: 1s;
+                height: 400px;
 
 
             }
@@ -140,15 +144,15 @@ img{
       
 
             #image-2{
-                left: 140px;
+                left: 160px;
             }
 
             #image-1{
-                left: 250px;
+                left: 320px;
             }
 
             #image-4{
-                left: 370px;
+                left: 460px;
             }
 
 
@@ -193,27 +197,27 @@ img{
        transform: translate(200% , 0%);
         position: relative;
        background: url('../images/section-3.jpg') center center no-repeat;
+       background-size: cover;
+       
         
 
         .absolute-images{
             .first-image{
                 position: absolute;
-                top: 25%;
-                left: 12%;
+    
                 transition: 2s;
                 -webkit-transition: 2s;
                 
                 // visibility: visible;
 
                 img{
-                    height: 400px;
+                    height: 600px;
                 }
             }
 
             .second-image{
                 position: absolute;
-                top: 10%;
-                left: 3%;
+           
                 transition: 2s;
                 -webkit-transition: 2s;
                 // opacity:0;
@@ -227,8 +231,7 @@ img{
 
             .third-image{
                 position: absolute;
-                top: 10%;
-                left: 3%;
+
                 transition: 2s;
                 -webkit-transition: 2s;
                 // opacity:0;
@@ -238,10 +241,23 @@ img{
                     height: 700px;
                 }
             }
+
+
+            .fourth-image{
+                position: absolute;
+
+                transition: 2s;
+                -webkit-transition:2s;
+                
+
+                img{
+                    height: 600px;
+                }
+            }
         }
 
         .absolute-description{
-            .first-description, .second-description, .third-description{
+            .first-description, .second-description, .third-description, .fourth-description{
                 position: absolute;
                 top: 29%;
                 right: 10%;
@@ -273,15 +289,17 @@ img{
         // background: pink;
         transform: translate(300% , 0%);
        background: url('../images/section-4.jpg') center center no-repeat;
+       background-size: cover;
+       
         
    }
 
-   #fifth{
-        // background: pink;
-        transform: translate(400% , 0%);
-   }
+//    #fifth{
+//         background: pink;
+//         transform: translate(400% , 0%);
+//    }
 }
 
-// ::-webkit-scrollbar { 
-//     display: none; 
-// }
+::-webkit-scrollbar { 
+    display: none; 
+}
