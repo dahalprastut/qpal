@@ -35,25 +35,40 @@ var problemTwo = document.querySelector('.problem-2');
 var problemThree = document.querySelector('.problem-3');
 
 
-// for third sectin variable
+// for third section variable
 
 
-var jumping = document.querySelector('.first-image');
-var magicMobile = document.querySelector('.second-image');
-var secondMagicMobile = document.querySelector('.third-image');
-var problem = document.querySelector('.fourth-image');
+var jumping = document.querySelector('.first-image-third');
+var magicMobile = document.querySelector('.second-image-third');
+var secondMagicMobile = document.querySelector('.third-image-third');
+var problem = document.querySelector('.fourth-image-third');
 
 
-var firstDescription = document.querySelector('.first-description');
-var secondDescription = document.querySelector('.second-description');
-var thirdDescription = document.querySelector('.third-description');
-var fourthDescription = document.querySelector('.fourth-description');
+var firstDescription = document.querySelector('.first-description-third');
+var secondDescription = document.querySelector('.second-description-third');
+var thirdDescription = document.querySelector('.third-description-third');
+var fourthDescription = document.querySelector('.fourth-description-third');
+
+
+// for fourth section variable
+
+
+var fourthMobileFirst = document.querySelector('.first-image-fourth');
+var fourthMobileSecond = document.querySelector('.second-image-fourth');
+var fourthMobileThird = document.querySelector('.third-image-fourth');
+var fourthMobileFourth = document.querySelector('.fourth-image-fourth');
+
+
+var fourthDescriptionFirst = document.querySelector('.first-description-fourth');
+var fourthDescriptionSecond = document.querySelector('.second-description-fourth');
+var fourthDescriptionThird = document.querySelector('.third-description-fourth');
+var fourthDescriptionFourth = document.querySelector('.fourth-description-fourth');
 
 
 
 window.addEventListener('scroll' , (event)=>{
     console.log('event' , window.scrollY);
-    if(window.scrollY >= 1288 && window.scrollY < 2200){
+    if(window.scrollY >= 1100 && window.scrollY < 1440){
         console.log('greter');
         imageOne.style='opacity:0;';
         imageTwo.style = "left:320px"
@@ -65,7 +80,7 @@ window.addEventListener('scroll' , (event)=>{
 
     }
 
-    if(window.scrollY < 1288){
+    if(window.scrollY < 1100){
         console.log('greter');
 
         imageOne.style='opacity:1';
@@ -78,7 +93,7 @@ window.addEventListener('scroll' , (event)=>{
         problemThree.style = 'display:none';
     }
 
-    if(window.scrollY >= 2200){
+    if(window.scrollY >= 1440){
       
         imageTwo.style='opacity:0; left:320px';
         imageThree.style = "left:320px"
@@ -92,8 +107,7 @@ window.addEventListener('scroll' , (event)=>{
     // third
 
 
-    if(window.scrollY >= 4960 && window.scrollY < 5660){
-
+    if(window.scrollY >= 2500 && window.scrollY < 2800){
         
         jumping.style=' opacity:0; top:40%; left:3%';
         secondMagicMobile.style ='opacity:0; top:10%; left:3%';
@@ -109,7 +123,7 @@ window.addEventListener('scroll' , (event)=>{
       
     }
 
-    if(window.scrollY < 4960){
+    if(window.scrollY < 2500){
         jumping.style=' opacity: 1; top:20%;left:8%;';
         magicMobile.style='opacity:0; top:10%; left:3%; ';
         secondMagicMobile.style ='opacity:0; top:10%; left:3%';
@@ -130,7 +144,7 @@ window.addEventListener('scroll' , (event)=>{
     // 
 
 
-    if(window.scrollY >= 5660 && window.scrollY >= 4960){
+    if(window.scrollY >= 2800 && window.scrollY >= 2500){
         secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
         jumping.style=' opacity:0; top:40%; left:3%';
         magicMobile.style=' opacity:0; top:40%; left:3%';
@@ -148,7 +162,7 @@ window.addEventListener('scroll' , (event)=>{
       
     }
 
-    if(window.scrollY < 5660 && window.scrollY >=4960){
+    if(window.scrollY < 2800 && window.scrollY >=2500){
         magicMobile.style=' opacity: 1; top:20%;left:8%;';
         secondMagicMobile.style='opacity:0; top:10%; left:3%; ';
         jumping.style=' opacity:0; top:40%; left:3%';
@@ -165,7 +179,7 @@ window.addEventListener('scroll' , (event)=>{
 
     // 
 
-    if(window.scrollY >= 6300 && window.scrollY >= 5660){
+    if(window.scrollY >= 3200 && window.scrollY >= 2800){
 
         secondMagicMobile.style='opacity: 0 ;top:40%;left:3%; ';
         jumping.style=' opacity:0; top:40%; left:3%';
@@ -181,7 +195,7 @@ window.addEventListener('scroll' , (event)=>{
 
     }
 
-    if(window.scrollY < 6300 && window.scrollY >= 5660){
+    if(window.scrollY < 3200 && window.scrollY >= 2800){
 
         secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
         jumping.style=' opacity:0; top:40%; left:3%';
@@ -199,6 +213,119 @@ window.addEventListener('scroll' , (event)=>{
  
 
     }
+
+    // fourth
+
+
+    if(window.scrollY >= 4600 && window.scrollY < 4900){
+        
+        fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+        fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+        fourthMobileSecond.style='opacity: 1 ;top:20%;left:8%; ';
+
+
+        fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+
+        fourthDescriptionFirst.style='opacity:0;'
+        fourthDescriptionSecond.style='opacity:1;'
+        fourthDescriptionThird.style='opacity:0';
+        fourthDescriptionFourth.style='opacity:0';
+      
+    }
+
+    if(window.scrollY < 4600){
+        fourthMobileFirst.style=' opacity: 1; top:20%;left:8%;';
+        fourthMobileSecond.style='opacity:0; top:10%; left:3%; ';
+        fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+
+        fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+        
+        
+
+
+        fourthDescriptionFirst.style='opacity:1;'
+        fourthDescriptionSecond.style='opacity:0;'
+        fourthDescriptionThird.style='opacity:0';
+        fourthDescriptionFourth.style='opacity:0';
+        
+        
+    }
+
+    // 
+
+
+    if(window.scrollY >= 4900 && window.scrollY >= 4600){
+        fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+        fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+        fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+
+        fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+        
+
+
+    fourthDescriptionFirst.style='opacity:0;'
+        fourthDescriptionSecond.style='opacity:0;'
+        fourthDescriptionThird.style='opacity:1;'
+        fourthDescriptionFourth.style='opacity:0';
+        
+      
+      
+    }
+
+    if(window.scrollY < 4900 && window.scrollY >=4600){
+        fourthMobileSecond.style=' opacity: 1; top:20%;left:8%;';
+        fourthMobileThird.style='opacity:0; top:10%; left:3%; ';
+        fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+
+        fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+        
+
+        fourthDescriptionFirst.style='opacity:0;'
+        fourthDescriptionSecond.style='opacity:1;'
+        fourthDescriptionThird.style='opacity:0;'
+        fourthDescriptionFourth.style='opacity:0';
+        
+    }
+
+    // 
+
+    if(window.scrollY >= 5300 && window.scrollY >= 4900){
+
+        fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+        fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+        fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+
+        fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+
+        
+        fourthDescriptionFirst.style='opacity:0;'
+        fourthDescriptionSecond.style='opacity:0;'
+        fourthDescriptionThird.style='opacity:0;'
+        fourthDescriptionFourth.style='opacity:1';
+
+    }
+
+    if(window.scrollY < 5300 && window.scrollY >= 4900){
+
+        fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+        fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+        fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+
+        fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+
+        fourthDescriptionFirst.style='opacity:0;'
+        fourthDescriptionSecond.style='opacity:0;'
+        fourthDescriptionThird.style='opacity:1;'
+        fourthDescriptionFourth.style='opacity:0';
+        
+
+
+ 
+
+    }
+
+
+
 
 
 

@@ -5,14 +5,24 @@
 </head>
 <body>
     <div class="desktop">
+        <div class="fixed">
+            Copyright © 2018. All rights reserved. <br> 
+            Designed and Developed by : The Misfits
+
+        </div>
+
+        <div class="second-fixed">
+            Qpal
+        </div>
         <div class="container">
             <div class="items"
             data-0="transform: translate(0%, 0%)"
             data-100p="transform: translate(-50%, 0%)"
-            data-300p = ""
-            data-500p="transform: translate(-100%, 0%)"
-            data-800p = ""
-            data-900p="transform: translate(-150%, 0%)"
+            data-200p = ""
+            data-250p="transform: translate(-100%, 0%)"
+            data-400p = ""
+            data-450p="transform: translate(-150%, 0%)"
+            data-600p=""
             >
                 <div class="boxes" id="first">
                     <div class="mobile-first">
@@ -45,7 +55,8 @@
                     <div class="main-problems">
                         <div class="problem-1">
                             <h2>Problem</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente necessitatibus alias eaque fugiat. Provident consequuntur animi praesentium natus, pariatur illo.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente necessitatibus alias eaque fugiat. Provident consequuntur animi praesentium natus, pariatur illo.</p>
                         </div>
                         <div class="problem-2">
                             <h2>Majja ayenani?</h2>
@@ -61,48 +72,89 @@
                     <div class="absolute-images">
 
                         
-                        <div class="first-image">
+                        <div class="first-image first-image-third" >
                             <img src="images/jump.png" alt="Jump">
                         </div>
 
-                        <div class="second-image">
+                        <div class="second-image second-image-third" >
                             <img src="images/splash_1.png" alt="mobile">
                         </div>
 
-                        <div class="third-image">
+                        <div class="third-image third-image-third">
                             <img src="images/signup.png" alt="mobile">
                         </div>
 
 
-                        <div class="fourth-image">
+                        <div class="fourth-image fourth-image-third">
                             <img src="images/what.png" alt="question">
                         </div>
                     </div>
 
                     <div class="absolute-description">
-                        <div class="first-description">
+                        <div class="first-description first-description-third">
                             <h2>Introducting Qpal</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid maxime nobis totam, consequuntur ut cum obcaecati sunt sapiente corrupti laboriosam.</p>
                         </div>
 
-                        <div class="second-description">
+                        <div class="second-description second-description-third">
                             <h2>New Definition for Queue</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
 
-                        <div class="third-description">
+                        <div class="third-description third-description-third">
                             <h2>Old Definition for Queue</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
 
-                        <div class="fourth-description">
+                        <div class="fourth-description fourth-description-third">
                             <h2>How it works?</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
                     </div>
                 </div>
                 <div class="boxes" id="fourth">
-                    lll
+                    <div class="absolute-images">
+
+                                            
+                        <div class="first-image first-image-fourth" >
+                            <img src="images/jump.png" alt="Jump">
+                        </div>
+
+                        <div class="second-image second-image-fourth" >
+                            <img src="images/splash_1.png" alt="mobile">
+                        </div>
+
+                        <div class="third-image third-image-fourth">
+                            <img src="images/signup.png" alt="mobile">
+                        </div>
+
+
+                        <div class="fourth-image fourth-image-fourth">
+                            <img src="images/what.png" alt="question">
+                        </div>
+                        </div>
+
+                        <div class="absolute-description">
+                        <div class="first-description first-description-fourth">
+                            <h2>Introducting Qpal</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid maxime nobis totam, consequuntur ut cum obcaecati sunt sapiente corrupti laboriosam.</p>
+                        </div>
+
+                        <div class="second-description second-description-fourth">
+                            <h2>New Definition for Queue</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
+                        </div>
+
+                        <div class="third-description third-description-fourth">
+                            <h2>Old Definition for Queue</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
+                        </div>
+
+                        <div class="fourth-description fourth-description-fourth">
+                            <h2>How it works?</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
+                        </div>
+                    </div>
 
                 </div>
                 <!-- <div class="boxes" id="fifth">

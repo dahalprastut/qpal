@@ -35,7 +35,29 @@ img{
 
 // start of container 
 
+.fixed{
+    position: fixed;
+    bottom:5%;
+    left: 5%;
+    
+    color: $primary-color;
+    z-index: 100;
+    font-size: 18px;
 
+
+
+
+}
+
+.second-fixed{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    color: $secondary-color;
+    font-size: 80px;
+    z-index: 100;
+    font-weight: 700;
+}
 
 .container{
     width: 100%;
@@ -290,6 +312,88 @@ img{
         transform: translate(300% , 0%);
        background: url('../images/section-4.jpg') center center no-repeat;
        background-size: cover;
+
+       .absolute-images{
+        .first-image{
+            position: absolute;
+
+            transition: 2s;
+            -webkit-transition: 2s;
+            
+            // visibility: visible;
+
+            img{
+                height: 600px;
+            }
+        }
+
+        .second-image{
+            position: absolute;
+       
+            transition: 2s;
+            -webkit-transition: 2s;
+            // opacity:0;
+            // visibility: hidden;
+
+            img{
+                height: 700px;
+            }
+        }
+
+
+        .third-image{
+            position: absolute;
+
+            transition: 2s;
+            -webkit-transition: 2s;
+            // opacity:0;
+            // visibility: hidden;
+
+            img{
+                height: 700px;
+            }
+        }
+
+
+        .fourth-image{
+            position: absolute;
+
+            transition: 2s;
+            -webkit-transition:2s;
+            
+
+            img{
+                height: 600px;
+            }
+        }
+    }
+
+    .absolute-description{
+        .first-description, .second-description, .third-description, .fourth-description{
+            position: absolute;
+            top: 29%;
+            right: 10%;
+            width: 800px;
+            transition: 2s;
+            -webkit-transition: 2s;
+
+            h2{
+                color: $primary-color;
+                font-size: 100px;
+                letter-spacing:1px;
+            }
+
+            p{
+                color: #000;
+                font-size: $paragraph;
+                margin-top: 30px;
+            }
+        }
+
+        .second-description{
+            // opacity:0;
+        }
+    }
        
         
    }
