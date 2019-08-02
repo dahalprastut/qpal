@@ -6,20 +6,31 @@
 <body>
     <div class="desktop">
         <div class="fixed">
-            Copyright © 2018. All rights reserved. <br> 
+            Copyright © 2019. All rights reserved. <br> 
             Designed and Developed by : The Misfits
 
         </div>
 
-        <div class="second-fixed">
+        <div class="second-fixed logo">
             Qpal
+        </div>
+
+        <div class="third-fixed">
+            <button class="active-btn">
+                <span class="mouseSpan"><img src="images/mouse1.png" alt="mouse"></span>
+                <span class="handSpan"><img src="images/hand1.png" alt="mouse"></span>
+            </button>
+
+            <button class="hidden-btn">
+                <span><img src="images/arrow_left.png" alt=""></span>
+            </button>
         </div>
         <div class="container">
             <div class="items"
             data-0="transform: translate(0%, 0%)"
             data-100p="transform: translate(-50%, 0%)"
-            data-200p = ""
-            data-250p="transform: translate(-100%, 0%)"
+            data-180p = ""
+            data-240p="transform: translate(-100%, 0%)"
             data-400p = ""
             data-450p="transform: translate(-150%, 0%)"
             data-600p=""
@@ -117,20 +128,20 @@
 
                                             
                         <div class="first-image first-image-fourth" >
-                            <img src="images/jump.png" alt="Jump">
+                            <img src="images/signup.png" alt="signup">
                         </div>
 
                         <div class="second-image second-image-fourth" >
-                            <img src="images/splash_1.png" alt="mobile">
+                            <img src="images/bank_screen.png" alt="bank">
                         </div>
 
                         <div class="third-image third-image-fourth">
-                            <img src="images/signup.png" alt="mobile">
+                            <img src="images/branch_screen.png" alt="mobile">
                         </div>
 
 
                         <div class="fourth-image fourth-image-fourth">
-                            <img src="images/what.png" alt="question">
+                            <img src="images/token_screen.png" alt="question">
                         </div>
                         </div>
 

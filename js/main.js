@@ -17,6 +17,10 @@ window.onload = ()=>{    // animation of first section
         linkButtons.style = 'opacity:1';
         
     },2000);
+
+    // window.scrollTo({
+    //     top:0
+    // })
 }
 
 
@@ -65,10 +69,19 @@ var fourthDescriptionThird = document.querySelector('.third-description-fourth')
 var fourthDescriptionFourth = document.querySelector('.fourth-description-fourth');
 
 
+// for buttons variables
+
+var activeBtn = document.querySelector('.active-btn');
+var hiddenBtn = document.querySelector('.hidden-btn');
+
+// for logo variable
+
+var logo = document.querySelector('.logo');
+
 
 window.addEventListener('scroll' , (event)=>{
     console.log('event' , window.scrollY);
-    if(window.scrollY >= 1100 && window.scrollY < 1440){
+    if(window.scrollY >= 1000 && window.scrollY < 1200){
         console.log('greter');
         imageOne.style='opacity:0;';
         imageTwo.style = "left:320px"
@@ -80,7 +93,7 @@ window.addEventListener('scroll' , (event)=>{
 
     }
 
-    if(window.scrollY < 1100){
+    if(window.scrollY < 1000){
         console.log('greter');
 
         imageOne.style='opacity:1';
@@ -93,7 +106,7 @@ window.addEventListener('scroll' , (event)=>{
         problemThree.style = 'display:none';
     }
 
-    if(window.scrollY >= 1440){
+    if(window.scrollY >= 1200){
       
         imageTwo.style='opacity:0; left:320px';
         imageThree.style = "left:320px"
@@ -217,7 +230,7 @@ window.addEventListener('scroll' , (event)=>{
     // fourth
 
 
-    if(window.scrollY >= 4600 && window.scrollY < 4900){
+    if(window.scrollY >= 4400 && window.scrollY < 4700){
         
         fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
         fourthMobileThird.style ='opacity:0; top:10%; left:3%';
@@ -233,7 +246,7 @@ window.addEventListener('scroll' , (event)=>{
       
     }
 
-    if(window.scrollY < 4600){
+    if(window.scrollY < 4400){
         fourthMobileFirst.style=' opacity: 1; top:20%;left:8%;';
         fourthMobileSecond.style='opacity:0; top:10%; left:3%; ';
         fourthMobileThird.style ='opacity:0; top:10%; left:3%';
@@ -254,7 +267,7 @@ window.addEventListener('scroll' , (event)=>{
     // 
 
 
-    if(window.scrollY >= 4900 && window.scrollY >= 4600){
+    if(window.scrollY >= 4700 && window.scrollY >= 4400){
         fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
         fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
         fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
@@ -272,7 +285,7 @@ window.addEventListener('scroll' , (event)=>{
       
     }
 
-    if(window.scrollY < 4900 && window.scrollY >=4600){
+    if(window.scrollY < 4700 && window.scrollY >=4400){
         fourthMobileSecond.style=' opacity: 1; top:20%;left:8%;';
         fourthMobileThird.style='opacity:0; top:10%; left:3%; ';
         fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
@@ -289,7 +302,7 @@ window.addEventListener('scroll' , (event)=>{
 
     // 
 
-    if(window.scrollY >= 5300 && window.scrollY >= 4900){
+    if(window.scrollY >= 5100 && window.scrollY >= 4700){
 
         fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
         fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
@@ -305,7 +318,7 @@ window.addEventListener('scroll' , (event)=>{
 
     }
 
-    if(window.scrollY < 5300 && window.scrollY >= 4900){
+    if(window.scrollY < 5100 && window.scrollY >= 4700){
 
         fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
         fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
@@ -324,6 +337,19 @@ window.addEventListener('scroll' , (event)=>{
 
     }
 
+    // for mouse and hand 
+    
+    if(window.scrollY >= 5100){
+        activeBtn.style = 'display:none';
+        hiddenBtn.style='display:block; cursor:pointer';
+    }
+
+
+    if(window.scrollY < 5100){
+        activeBtn.style = 'display:block';
+        hiddenBtn.style='display:none';
+    }
+
 
 
 
@@ -334,3 +360,44 @@ window.addEventListener('scroll' , (event)=>{
 
 
 // second section ends
+
+
+// ---------- navigation btns start
+
+// go on top 
+
+
+var scrollTop = (event)=>{
+    event.preventDefault();
+    window.scrollTo({
+        top:0,
+        behavior: 'smooth'
+    });
+}
+
+hiddenBtn.onclick =()=> scrollTop(event);
+    
+
+
+
+logo.onclick =()=> scrollTop(event);
+
+
+
+// var second = document.querySelector('#second').getBoundingClientRect().top;
+
+
+
+
+// activeBtn.onclick = function(event){
+//     alert('asdf')
+//     event.preventDefault();
+//     window.scrollTo({
+//         top:second,
+//         behavior: 'smooth'
+//     });
+// }
+
+// -------------------
+
+
