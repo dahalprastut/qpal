@@ -46,7 +46,8 @@ img {
     height: 72px;
     border: 0;
     outline: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    display: block; }
     .third-fixed button .mouseSpan img {
       height: 70px;
       width: 80px;

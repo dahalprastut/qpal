@@ -78,6 +78,12 @@ var hiddenBtn = document.querySelector('.hidden-btn');
 
 var logo = document.querySelector('.logo');
 
+// for storing horizontal height of sections
+
+var second = document.querySelector('#second').getBoundingClientRect().left;
+var third = document.querySelector('#third').getBoundingClientRect().left;
+var fourth = document.querySelector('#fourth').getBoundingClientRect().left;
+
 
 window.addEventListener('scroll' , (event)=>{
     console.log('event' , window.scrollY);
@@ -384,19 +390,36 @@ logo.onclick =()=> scrollTop(event);
 
 
 
-// var second = document.querySelector('#second').getBoundingClientRect().top;
+
+
+activeBtn.onclick = function(event){
+    event.preventDefault();
+    if(window.scrollY <= 800){
+
+        window.scrollTo({
+            top:second - 1000,
+            behavior: 'smooth'
+        });
+    }
+    
+    if(window.scrollY > 800 && window.scrollY <= 2300){
+        window.scrollTo({
+            top:third - 1400,
+            behavior: 'smooth'
+        });
+    }
+    if(window.scrollY > 2300 ){
+        window.scrollTo({
+            top:fourth - 1400,
+            behavior: 'smooth'
+        });
+    }
+}
 
 
 
 
-// activeBtn.onclick = function(event){
-//     alert('asdf')
-//     event.preventDefault();
-//     window.scrollTo({
-//         top:second,
-//         behavior: 'smooth'
-//     });
-// }
+
 
 // -------------------
 
