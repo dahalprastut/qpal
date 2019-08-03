@@ -61,12 +61,14 @@ var fourthMobileFirst = document.querySelector('.first-image-fourth');
 var fourthMobileSecond = document.querySelector('.second-image-fourth');
 var fourthMobileThird = document.querySelector('.third-image-fourth');
 var fourthMobileFourth = document.querySelector('.fourth-image-fourth');
+var fourthMobileFifth = document.querySelector('.fifth-image-fourth');
 
 
 var fourthDescriptionFirst = document.querySelector('.first-description-fourth');
 var fourthDescriptionSecond = document.querySelector('.second-description-fourth');
 var fourthDescriptionThird = document.querySelector('.third-description-fourth');
 var fourthDescriptionFourth = document.querySelector('.fourth-description-fourth');
+var fourthDescriptionFifth = document.querySelector('.fifth-description-fourth');
 
 
 // for buttons variables
@@ -244,11 +246,14 @@ window.addEventListener('scroll' , (event)=>{
 
 
         fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+        fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
 
         fourthDescriptionFirst.style='opacity:0;'
         fourthDescriptionSecond.style='opacity:1;'
         fourthDescriptionThird.style='opacity:0';
         fourthDescriptionFourth.style='opacity:0';
+        fourthDescriptionFifth.style='opacity:0';
+        
       
     }
 
@@ -258,6 +263,7 @@ window.addEventListener('scroll' , (event)=>{
         fourthMobileThird.style ='opacity:0; top:10%; left:3%';
 
         fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+        fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
         
         
 
@@ -266,6 +272,8 @@ window.addEventListener('scroll' , (event)=>{
         fourthDescriptionSecond.style='opacity:0;'
         fourthDescriptionThird.style='opacity:0';
         fourthDescriptionFourth.style='opacity:0';
+        fourthDescriptionFifth.style='opacity:0';
+        
         
         
     }
@@ -279,13 +287,16 @@ window.addEventListener('scroll' , (event)=>{
         fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
 
         fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+        fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
         
 
 
-    fourthDescriptionFirst.style='opacity:0;'
+        fourthDescriptionFirst.style='opacity:0;'
         fourthDescriptionSecond.style='opacity:0;'
         fourthDescriptionThird.style='opacity:1;'
         fourthDescriptionFourth.style='opacity:0';
+        fourthDescriptionFifth.style='opacity:0';
+        
         
       
       
@@ -297,12 +308,15 @@ window.addEventListener('scroll' , (event)=>{
         fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
 
         fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+        fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
         
 
         fourthDescriptionFirst.style='opacity:0;'
         fourthDescriptionSecond.style='opacity:1;'
         fourthDescriptionThird.style='opacity:0;'
         fourthDescriptionFourth.style='opacity:0';
+        fourthDescriptionFifth.style='opacity:0';
+        
         
     }
 
@@ -315,12 +329,15 @@ window.addEventListener('scroll' , (event)=>{
         fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
 
         fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+        fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
 
         
         fourthDescriptionFirst.style='opacity:0;'
         fourthDescriptionSecond.style='opacity:0;'
         fourthDescriptionThird.style='opacity:0;'
         fourthDescriptionFourth.style='opacity:1';
+        fourthDescriptionFifth.style='opacity:0';
+        
 
     }
 
@@ -331,27 +348,68 @@ window.addEventListener('scroll' , (event)=>{
         fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
 
         fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+        fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
 
         fourthDescriptionFirst.style='opacity:0;'
         fourthDescriptionSecond.style='opacity:0;'
         fourthDescriptionThird.style='opacity:1;'
         fourthDescriptionFourth.style='opacity:0';
+        fourthDescriptionFifth.style='opacity:0';
+        
         
 
+    }
 
- 
+    
+    if(window.scrollY >= 5500 && window.scrollY >= 5100){
+
+        fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+        fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+        fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+
+        fourthMobileFourth.style ='opacity:0; top:40%; left:3%';
+        fourthMobileFifth.style ='opacity:1; top:20%; left:8%';
+
+        
+        fourthDescriptionFirst.style='opacity:0;'
+        fourthDescriptionSecond.style='opacity:0;'
+        fourthDescriptionThird.style='opacity:0;'
+        fourthDescriptionFourth.style='opacity:0';
+        fourthDescriptionFifth.style='opacity:1';
 
     }
+
+    if(window.scrollY < 5500 && window.scrollY >= 5100){
+
+        fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+        fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+        fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+
+        fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+        fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+
+        fourthDescriptionFirst.style='opacity:0;'
+        fourthDescriptionSecond.style='opacity:0;'
+        fourthDescriptionThird.style='opacity:0;'
+        fourthDescriptionFourth.style='opacity:1';
+        fourthDescriptionFifth.style='opacity:0';
+        
+        
+
+    }
+
+
+
 
     // for mouse and hand 
     
-    if(window.scrollY >= 5100){
+    if(window.scrollY >= 5500){
         activeBtn.style = 'display:none';
-        hiddenBtn.style='display:block; cursor:pointer';
+        hiddenBtn.style='display:block';
     }
 
 
-    if(window.scrollY < 5100){
+    if(window.scrollY < 5500){
         activeBtn.style = 'display:block';
         hiddenBtn.style='display:none';
     }
@@ -382,11 +440,9 @@ var scrollTop = (event)=>{
 }
 
 hiddenBtn.onclick =()=> scrollTop(event);
-    
-
-
-
 logo.onclick =()=> scrollTop(event);
+
+// 
 
 
 

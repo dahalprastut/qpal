@@ -143,9 +143,13 @@
                         <div class="fourth-image fourth-image-fourth">
                             <img src="images/token_screen.png" alt="question">
                         </div>
-                        </div>
 
-                        <div class="absolute-description">
+                        <div class="fifth-image fifth-image-fourth">
+                            <img src="images/offline_screen.png" alt="question">
+                        </div>
+                    </div>
+
+                    <div class="absolute-description">
                         <div class="first-description first-description-fourth">
                             <h2>Introducting Qpal</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid maxime nobis totam, consequuntur ut cum obcaecati sunt sapiente corrupti laboriosam.</p>
@@ -163,6 +167,11 @@
 
                         <div class="fourth-description fourth-description-fourth">
                             <h2>How it works?</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
+                        </div>
+
+                        <div class="fifth-description fifth-description-fourth">
+                            <h2>Offline</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
                     </div>

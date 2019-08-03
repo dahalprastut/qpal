@@ -400,62 +400,22 @@ img{
        background-size: cover;
 
        .absolute-images{
-        .first-image{
-            position: absolute;
 
-            transition: 2s;
-            -webkit-transition: 2s;
+            div{
+                position: absolute;
+
+                transition: 2s;
+                -webkit-transition: 2s;
+
+                img{
+                    height: 700px;
+                }
+            }
             
-            // visibility: visible;
-
-            img{
-                height: 700px;
-            }
         }
-
-        .second-image{
-            position: absolute;
-       
-            transition: 2s;
-            -webkit-transition: 2s;
-            // opacity:0;
-            // visibility: hidden;
-
-            img{
-                height: 700px;
-            }
-        }
-
-
-        .third-image{
-            position: absolute;
-
-            transition: 2s;
-            -webkit-transition: 2s;
-            // opacity:0;
-            // visibility: hidden;
-
-            img{
-                height: 700px;
-            }
-        }
-
-
-        .fourth-image{
-            position: absolute;
-
-            transition: 2s;
-            -webkit-transition:2s;
-            
-
-            img{
-                height: 700px;
-            }
-        }
-    }
 
     .absolute-description{
-        .first-description, .second-description, .third-description, .fourth-description{
+        div{
             position: absolute;
             top: 29%;
             right: 10%;

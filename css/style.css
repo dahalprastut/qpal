@@ -227,42 +227,24 @@ img {
     transform: translate(300%, 0%);
     background: url("../images/section-4.jpg") center center no-repeat;
     background-size: cover; }
-    .container #fourth .absolute-images .first-image {
+    .container #fourth .absolute-images div {
       position: absolute;
       transition: 2s;
       -webkit-transition: 2s; }
-      .container #fourth .absolute-images .first-image img {
+      .container #fourth .absolute-images div img {
         height: 700px; }
-    .container #fourth .absolute-images .second-image {
-      position: absolute;
-      transition: 2s;
-      -webkit-transition: 2s; }
-      .container #fourth .absolute-images .second-image img {
-        height: 700px; }
-    .container #fourth .absolute-images .third-image {
-      position: absolute;
-      transition: 2s;
-      -webkit-transition: 2s; }
-      .container #fourth .absolute-images .third-image img {
-        height: 700px; }
-    .container #fourth .absolute-images .fourth-image {
-      position: absolute;
-      transition: 2s;
-      -webkit-transition: 2s; }
-      .container #fourth .absolute-images .fourth-image img {
-        height: 700px; }
-    .container #fourth .absolute-description .first-description, .container #fourth .absolute-description .second-description, .container #fourth .absolute-description .third-description, .container #fourth .absolute-description .fourth-description {
+    .container #fourth .absolute-description div {
       position: absolute;
       top: 29%;
       right: 10%;
       width: 800px;
       transition: 2s;
       -webkit-transition: 2s; }
-      .container #fourth .absolute-description .first-description h2, .container #fourth .absolute-description .second-description h2, .container #fourth .absolute-description .third-description h2, .container #fourth .absolute-description .fourth-description h2 {
+      .container #fourth .absolute-description div h2 {
         color: #3b6dcc;
         font-size: 100px;
         letter-spacing: 1px; }
-      .container #fourth .absolute-description .first-description p, .container #fourth .absolute-description .second-description p, .container #fourth .absolute-description .third-description p, .container #fourth .absolute-description .fourth-description p {
+      .container #fourth .absolute-description div p {
         color: #000;
         font-size: 34px;
         margin-top: 30px; }
