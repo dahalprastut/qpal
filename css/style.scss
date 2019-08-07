@@ -365,7 +365,7 @@ img{
         }
 
         .absolute-description{
-            .first-description, .second-description, .third-description, .fourth-description{
+            div{
                 position: absolute;
                 top: 29%;
                 right: 10%;
@@ -436,9 +436,6 @@ img{
             }
         }
 
-        .second-description{
-            // opacity:0;
-        }
     }
        
         
@@ -452,4 +449,137 @@ img{
 
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+
+@media(max-width:1630px){
+
+ 
+    .container{
+        #first{
+            .mobile-first{
+                img{
+                    height: 680px;
+                }
+            }
+
+            .main-information{
+                margin-top: 200px;
+                margin-left: 140px;
+                h1{
+                    font-size: 60px;
+                }
+
+                p{
+                    font-size: 20px;
+                }
+
+                .wrapper-button{
+                    margin-top: 60px;
+                    img{
+                        height: 70px;
+                    }
+                }
+            }
+        }
+
+        #second{
+            .persons{
+
+                img{
+
+                    height: 200px;
+                    top: -100px;
+                    left: 180px;
+                    #image-2{
+                        left: 240px !important;
+                    }
+        
+                    #image-1{
+                        left: 320px;
+                    }
+        
+                    #image-4{
+                        left: 460px;
+                    }
+                }
+            }
+
+            .main-problems{
+                margin-right:20px;
+                h2{
+                    font-size: 60px;
+
+                }
+
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        #third{
+            .absolute-images{
+                .first-image, .fourth-image{
+                    img{
+
+                        height: 400px;
+                    }
+                }
+
+                .second-image, .third-image{
+                    img{
+
+                        height: 500px;
+                    }
+                }
+            }
+
+            .absolute-description{
+                div{
+                    right: 2%;
+
+                    h2{
+                        font-size: 60px;
+    
+                    }
+    
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        #fourth{
+            .absolute-images{
+        
+                div{
+                    img{
+
+                        height: 500px;
+                    }
+                }
+            }
+
+            .absolute-description{
+                div{
+                    right: 2%;
+
+                    h2{
+                        font-size: 60px;
+    
+                    }
+    
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+      
+    }
+
+
 }

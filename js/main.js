@@ -90,38 +90,41 @@ var fourth = document.querySelector('#fourth').getBoundingClientRect().left;
 window.addEventListener('scroll' , (event)=>{
     // console.log('event' , window.scrollY);
 
-    if(window.innerWidth >= 1920 & window.innerWidth < 2133){
-        if(window.scrollY >= 1000 && window.scrollY < 1200){
-            imageOne.style='opacity:0;';
-            imageTwo.style = "left:320px"
-            imageThree.style = "left:160px"
-    
-            problemTwo.style = 'display:block';
-            problemOne.style = 'display:none';
-            problemThree.style='display:none'
-    
-        }
-    
-        if(window.scrollY < 1000){
-    
-            imageOne.style='opacity:1';
-            imageTwo.style = "left:160px"
-            imageThree.style = "left:60px"
-            
-    
-            problemOne.style = 'display:block';
-            problemTwo.style = 'display:none';
-            problemThree.style = 'display:none';
-        }
-    
-        if(window.scrollY >= 1200){
-          
-            imageTwo.style='opacity:0; left:320px';
-            imageThree.style = "left:320px"
-    
-            problemOne.style = 'display:none';
-            problemTwo.style = 'display:none';
-            problemThree.style = 'display:block';
+    if( window.innerWidth < 2133){  //window.innerWidth >= 1920 &&
+
+        if(window.innerWidth > 1630){
+            if(window.scrollY >= 1000 && window.scrollY < 1200){
+                imageOne.style='opacity:0;';
+                imageTwo.style = "left:320px"
+                imageThree.style = "left:160px"
+        
+                problemTwo.style = 'display:block';
+                problemOne.style = 'display:none';
+                problemThree.style='display:none'
+        
+            }
+        
+            if(window.scrollY < 1000){
+        
+                imageOne.style='opacity:1';
+                imageTwo.style = "left:160px"
+                imageThree.style = "left:60px"
+                
+        
+                problemOne.style = 'display:block';
+                problemTwo.style = 'display:none';
+                problemThree.style = 'display:none';
+            }
+        
+            if(window.scrollY >= 1200){
+              
+                imageTwo.style='opacity:0; left:320px';
+                imageThree.style = "left:320px"
+        
+                problemOne.style = 'display:none';
+                problemTwo.style = 'display:none';
+                problemThree.style = 'display:block';
+            }
         }
     
     
@@ -418,7 +421,7 @@ window.addEventListener('scroll' , (event)=>{
 
     // for second 90%
 
-    if(window.innerWidth >= 2133 & window.innerWidth < 2400){
+    if(window.innerWidth >= 2133 ){  // && window.innerWidth < 2400
         if(window.scrollY >= 1100 && window.scrollY < 1300){
             imageOne.style='opacity:0;';
             imageTwo.style = "left:320px"
@@ -742,7 +745,525 @@ window.addEventListener('scroll' , (event)=>{
             hiddenBtn.style='display:none';
         }
     }
+
+    // for 110%
+
+    if(window.innerWidth <= 1745){
+
+
+        // foruth
+        if(window.scrollY >= 4000 && window.scrollY < 4300){
+            
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+            fourthMobileSecond.style='opacity: 1 ;top:20%;left:8%; ';
+    
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:1;'
+            fourthDescriptionThird.style='opacity:0';
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+          
+        }
+    
+        if(window.scrollY < 4000){
+            fourthMobileFirst.style=' opacity: 1; top:20%;left:8%;';
+            fourthMobileSecond.style='opacity:0; top:10%; left:3%; ';
+            fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+            
+            
+    
+    
+            fourthDescriptionFirst.style='opacity:1;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0';
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+            
+        }
+    
+        // 
+    
+    
+        if(window.scrollY >= 4300 && window.scrollY >= 4000){
+            fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+            
+    
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:1;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+          
+          
+        }
+    
+        if(window.scrollY < 4300 && window.scrollY >=4000){
+            fourthMobileSecond.style=' opacity: 1; top:20%;left:8%;';
+            fourthMobileThird.style='opacity:0; top:10%; left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+            
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:1;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+        }
+    
+        // 
+    
+        if(window.scrollY >= 4700 && window.scrollY >= 4300){
+    
+            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:1';
+            fourthDescriptionFifth.style='opacity:0';
+            
+    
+        }
+    
+        if(window.scrollY < 4700 && window.scrollY >= 4300){
+    
+            fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:1;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+    
+        }
+    
+        
+        if(window.scrollY >= 5100 && window.scrollY >= 4700){
+    
+            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:40%; left:3%';
+            fourthMobileFifth.style ='opacity:1; top:20%; left:8%';
+    
+            
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:1';
+    
+        }
+    
+        if(window.scrollY < 5100 && window.scrollY >= 4700){
+    
+            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:1';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+    
+        }
+    
+    
+    
+    
+        // for mouse and hand 
+        
+        if(window.scrollY >= 5100){
+            activeBtn.style = 'display:none';
+            hiddenBtn.style='display:block';
+        }
+    
+    
+        if(window.scrollY < 5100){
+            activeBtn.style = 'display:block';
+            hiddenBtn.style='display:none';
+        }
+    }
+
    
+
+    // for 120%
+
+
+    if(window.innerWidth <= 1630){
+
+        // second
+
+
+        if(window.scrollY >= 1000 && window.scrollY < 1200){
+            imageOne.style='opacity:0;';
+            imageTwo.style = "left:320px"
+            imageThree.style = "left:240px"
+    
+            problemTwo.style = 'display:block';
+            problemOne.style = 'display:none';
+            problemThree.style='display:none'
+    
+        }
+    
+        if(window.scrollY < 1000){
+            
+            imageOne.style='opacity:1';
+            imageTwo.style = "left:240px"
+            imageThree.style = "left:180px"
+            
+    
+            problemOne.style = 'display:block';
+            problemTwo.style = 'display:none';
+            problemThree.style = 'display:none';
+        }
+    
+        if(window.scrollY >= 1200){
+          
+            imageTwo.style='opacity:0; left:320px';
+            imageThree.style = "left:320px"
+    
+            problemOne.style = 'display:none';
+            problemTwo.style = 'display:none';
+            problemThree.style = 'display:block';
+        }
+    
+
+         // third
+    
+    
+         if(window.scrollY >= 2000 && window.scrollY < 2300){
+            
+            jumping.style=' opacity:0; top:40%; left:3%';
+            secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+            magicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+    
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+    
+            firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:1;'
+            thirdDescription.style='opacity:0';
+            fourthDescription.style='opacity:0';
+          
+        }
+    
+        if(window.scrollY < 2000){
+            jumping.style=' opacity: 1; top:20%;left:8%;';
+            magicMobile.style='opacity:0; top:10%; left:3%; ';
+            secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+            
+            
+    
+    
+            firstDescription.style='opacity:1;'
+            secondDescription.style='opacity:0;'
+            thirdDescription.style='opacity:0';
+            fourthDescription.style='opacity:0';
+            
+            
+        }
+    
+        // 
+    
+    
+        if(window.scrollY >= 2300 && window.scrollY >= 2000){
+            secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+            jumping.style=' opacity:0; top:40%; left:3%';
+            magicMobile.style=' opacity:0; top:40%; left:3%';
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+            
+    
+    
+        firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:0;'
+            thirdDescription.style='opacity:1;'
+            fourthDescription.style='opacity:0';
+            
+          
+          
+        }
+    
+        if(window.scrollY < 2300 && window.scrollY >=2000){
+            magicMobile.style=' opacity: 1; top:20%;left:8%;';
+            secondMagicMobile.style='opacity:0; top:10%; left:3%; ';
+            jumping.style=' opacity:0; top:40%; left:3%';
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+            
+    
+            firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:1;'
+            thirdDescription.style='opacity:0;'
+            fourthDescription.style='opacity:0';
+            
+        }
+    
+        // 
+    
+        if(window.scrollY >= 2700 && window.scrollY >= 2300){
+    
+            secondMagicMobile.style='opacity: 0 ;top:40%;left:3%; ';
+            jumping.style=' opacity:0; top:40%; left:3%';
+            magicMobile.style=' opacity:0; top:40%; left:3%';
+    
+            problem.style ='opacity:1; top:20%; left:8%';
+    
+            
+            firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:0;'
+            thirdDescription.style='opacity:0;'
+            fourthDescription.style='opacity:1';
+    
+        }
+    
+        if(window.scrollY < 2700 && window.scrollY >= 2300){
+    
+            secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+            jumping.style=' opacity:0; top:40%; left:3%';
+            magicMobile.style=' opacity:0; top:40%; left:3%';
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+    
+            firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:0;'
+            thirdDescription.style='opacity:1;'
+            fourthDescription.style='opacity:0';
+            
+    
+    
+     
+    
+        }
+    
+        // fourth
+
+        if(window.scrollY >= 3500 && window.scrollY < 3800){
+            
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+            fourthMobileSecond.style='opacity: 1 ;top:20%;left:8%; ';
+    
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:1;'
+            fourthDescriptionThird.style='opacity:0';
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+          
+        }
+    
+        if(window.scrollY < 3500){
+            fourthMobileFirst.style=' opacity: 1; top:20%;left:8%;';
+            fourthMobileSecond.style='opacity:0; top:10%; left:3%; ';
+            fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+            
+            
+    
+    
+            fourthDescriptionFirst.style='opacity:1;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0';
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+            
+        }
+    
+        // 
+    
+    
+        if(window.scrollY >= 3800 && window.scrollY >= 3500){
+            fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+            
+    
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:1;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+          
+          
+        }
+    
+        if(window.scrollY < 3800 && window.scrollY >=3500){
+            fourthMobileSecond.style=' opacity: 1; top:20%;left:8%;';
+            fourthMobileThird.style='opacity:0; top:10%; left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+            
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:1;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+        }
+    
+        // 
+    
+        if(window.scrollY >= 4200 && window.scrollY >= 3800){
+    
+            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:1';
+            fourthDescriptionFifth.style='opacity:0';
+            
+    
+        }
+    
+        if(window.scrollY < 4200 && window.scrollY >= 3800){
+    
+            fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:1;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+    
+        }
+    
+        
+        if(window.scrollY >= 4500 && window.scrollY >= 4200){
+    
+            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:40%; left:3%';
+            fourthMobileFifth.style ='opacity:1; top:20%; left:8%';
+    
+            
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:1';
+    
+        }
+    
+        if(window.scrollY < 4500 && window.scrollY >= 4200){
+    
+            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:1';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+    
+        }
+    
+    
+    
+    
+        // for mouse and hand 
+        
+        if(window.scrollY >= 4500){
+            activeBtn.style = 'display:none';
+            hiddenBtn.style='display:block';
+        }
+    
+    
+        if(window.scrollY < 4500){
+            activeBtn.style = 'display:block';
+            hiddenBtn.style='display:none';
+        }
+    
+    
+       
+    }
 
 
 
@@ -780,26 +1301,124 @@ logo.onclick =()=> scrollTop(event);
 
 activeBtn.onclick = function(event){
     event.preventDefault();
-    if(window.scrollY <= 800){
 
-        window.scrollTo({
-            top:second - 1000,
-            behavior: 'smooth'
-        });
-    }
+    if(window.innerWidth < 2133){  //window.innerWidth >= 1746 && 
+
+        if(window.scrollY <= 800){
     
-    if(window.scrollY > 800 && window.scrollY <= 2300){
-        window.scrollTo({
-            top:third - 1400,
-            behavior: 'smooth'
-        });
+            window.scrollTo({
+                top:second - 1000,
+                behavior: 'smooth'
+            });
+        }
+        
+        if(window.scrollY > 800 && window.scrollY <= 2300){
+            window.scrollTo({
+                top:third - 1400,
+                behavior: 'smooth'
+            });
+        }
+        if(window.scrollY > 2300 ){
+            window.scrollTo({
+                top:fourth - 1400,
+                behavior: 'smooth'
+            });
+        }
     }
-    if(window.scrollY > 2300 ){
-        window.scrollTo({
-            top:fourth - 1400,
-            behavior: 'smooth'
-        });
+
+
+    // for 90%
+
+    if(window.innerWidth >= 2133){
+
+        if(window.scrollY <= 800){
+    
+            window.scrollTo({
+                top:second - 1050,
+                behavior: 'smooth'
+            });
+        }
+        
+        if(window.scrollY > 800 && window.scrollY <= 2300){
+            window.scrollTo({
+                top:third - 1760,
+                behavior: 'smooth'
+            });
+        }
+        if(window.scrollY > 2300 ){
+            window.scrollTo({
+                top:fourth - 1710,
+                behavior: 'smooth'
+            });
+        }
     }
+
+    // for 110%
+
+    if(window.innerWidth <= 1745){
+
+        if(window.scrollY <= 800){
+    
+            window.scrollTo({
+                top:second - 900,
+                behavior: 'smooth'
+            });
+        }
+        
+        if(window.scrollY > 800 && window.scrollY <= 2300){
+            window.scrollTo({
+                top:third - 1100,
+                behavior: 'smooth'
+            });
+        }
+        if(window.scrollY > 2300 ){
+            window.scrollTo({
+                top:fourth - 1400,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // for 120%
+
+    // alert(window.scrollY);
+    if(window.innerWidth <= 1630){
+
+        if(window.scrollY <= 800){
+    
+            window.scrollTo({
+                top:second - 700,
+                behavior: 'smooth'
+            });
+        }
+        
+        if(window.scrollY > 800 && window.scrollY <= 1879){
+            window.scrollTo({
+                top:third - 1100,
+                behavior: 'smooth'
+            });
+        }
+
+        if(window.scrollY > 1879 ){
+            window.scrollTo({
+                top:fourth - 1200,
+                behavior: 'smooth'
+            });
+        }
+        if(window.scrollY > 3400 ){
+            alert(window.scrollY);
+            window.scrollTo({
+                top:4600,
+                behavior: 'smooth'
+            });
+        }
+
+
+    }
+
+
+
+
 }
 
 

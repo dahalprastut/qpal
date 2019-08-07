@@ -66,8 +66,7 @@
                     <div class="main-problems">
                         <div class="problem-1">
                             <h2>Problem</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente necessitatibus alias eaque fugiat. Provident consequuntur animi praesentium natus, pariatur illo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente necessitatibus alias eaque fugiat. Provident consequuntur animi praesentium natus, pariatur illo.</p>
                         </div>
                         <div class="problem-2">
                             <h2>Majja ayenani?</h2>

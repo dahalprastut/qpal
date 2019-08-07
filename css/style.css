@@ -208,18 +208,18 @@ img {
       -webkit-transition: 2s; }
       .container #third .absolute-images .fourth-image img {
         height: 600px; }
-    .container #third .absolute-description .first-description, .container #third .absolute-description .second-description, .container #third .absolute-description .third-description, .container #third .absolute-description .fourth-description {
+    .container #third .absolute-description div {
       position: absolute;
       top: 29%;
       right: 10%;
       width: 800px;
       transition: 2s;
       -webkit-transition: 2s; }
-      .container #third .absolute-description .first-description h2, .container #third .absolute-description .second-description h2, .container #third .absolute-description .third-description h2, .container #third .absolute-description .fourth-description h2 {
+      .container #third .absolute-description div h2 {
         color: #fff;
         font-size: 100px;
         letter-spacing: 1px; }
-      .container #third .absolute-description .first-description p, .container #third .absolute-description .second-description p, .container #third .absolute-description .third-description p, .container #third .absolute-description .fourth-description p {
+      .container #third .absolute-description div p {
         color: #000;
         font-size: 34px;
         margin-top: 30px; }
@@ -251,5 +251,54 @@ img {
 
 ::-webkit-scrollbar {
   display: none; }
+
+@media (max-width: 1630px) {
+  .container #first .mobile-first img {
+    height: 680px; }
+  .container #first .main-information {
+    margin-top: 200px;
+    margin-left: 140px; }
+    .container #first .main-information h1 {
+      font-size: 60px; }
+    .container #first .main-information p {
+      font-size: 20px; }
+    .container #first .main-information .wrapper-button {
+      margin-top: 60px; }
+      .container #first .main-information .wrapper-button img {
+        height: 70px; }
+  .container #second .persons img {
+    height: 200px;
+    top: -100px;
+    left: 180px; }
+    .container #second .persons img #image-2 {
+      left: 240px !important; }
+    .container #second .persons img #image-1 {
+      left: 320px; }
+    .container #second .persons img #image-4 {
+      left: 460px; }
+  .container #second .main-problems {
+    margin-right: 20px; }
+    .container #second .main-problems h2 {
+      font-size: 60px; }
+    .container #second .main-problems p {
+      font-size: 20px; }
+  .container #third .absolute-images .first-image img, .container #third .absolute-images .fourth-image img {
+    height: 400px; }
+  .container #third .absolute-images .second-image img, .container #third .absolute-images .third-image img {
+    height: 500px; }
+  .container #third .absolute-description div {
+    right: 2%; }
+    .container #third .absolute-description div h2 {
+      font-size: 60px; }
+    .container #third .absolute-description div p {
+      font-size: 20px; }
+  .container #fourth .absolute-images div img {
+    height: 500px; }
+  .container #fourth .absolute-description div {
+    right: 2%; }
+    .container #fourth .absolute-description div h2 {
+      font-size: 60px; }
+    .container #fourth .absolute-description div p {
+      font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
