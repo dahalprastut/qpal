@@ -4,6 +4,7 @@
 $paragraph: 34px;
 
 $primary-color: #3b6dcc;
+$gradient-color: #2fb0dd;
 $secondary-color: #fff;
 
 
@@ -23,6 +24,11 @@ img{
 }
 
 
+.center{
+    max-width: 1000px;
+    margin: auto;
+}
+
 .clearfix::after{
     content: '';
     display: block;
@@ -34,6 +40,14 @@ img{
 // ------------ all for desktop view ------------------
 
 // start of container 
+
+.desktop{
+    display: block;
+}
+
+.mobile-view{
+    display: none;
+}
 
 .fixed{
     position: fixed;
@@ -468,9 +482,9 @@ img{
 //    }
 }
 
-// ::-webkit-scrollbar { 
-//     display: none; 
-// }
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 
 @media(max-width:1630px){
@@ -715,4 +729,279 @@ img{
     }
 
 
+}
+
+
+// for mobile view
+@media (max-width:1400px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile-view{
+        display: block;
+        
+
+        // landing start
+
+        >div{
+            height: 652px;
+
+        }
+
+        h1,h2{
+            font-size: 60px;
+            color: #fff;
+        }
+
+        p{
+            font-size: 20px;
+            margin-top: 25px;
+        }
+    
+
+        .landing-page{
+            background: linear-gradient(to right,$primary-color, $gradient-color);
+            max-width: 100%;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .absolute-hand{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                img{
+                height: 700px;
+                    
+                }
+            }
+            .center{
+                display: flex;
+                justify-content: flex-end;
+            }
+    
+            .main-information{
+                margin-top: -160px;
+                // margin-left: 50px;
+                max-width: 60%;
+                
+            
+    
+            
+    
+                .wrapper-button{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 25px;
+    
+                    a{
+                        margin-right: 20px;
+                        
+                        img{
+                            height: 60px;
+    
+                        }
+                    }
+    
+                }
+            }
+        }
+
+        // landing ends
+
+        // problem start
+
+        .problem{
+            padding: 0 20px;
+            
+            .center{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+
+                .queue{
+                    img{
+                        height: 400px;
+                    }
+                }
+
+                .define-problems{
+                    text-align: left;
+                    max-width: 60%;
+                    margin-left: 20px;
+
+                    h2{
+                        color: $primary-color;
+                    }
+
+                  
+                }
+            }
+        }
+
+        // introduction start
+
+        .introduction{
+            background: linear-gradient(to right,$primary-color, $gradient-color);
+            padding: 0 20px;
+            
+            .center{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+
+                .video{
+                    margin-left: 20px;
+                    img{
+                        height: 400px;
+                    }
+                }
+
+                .about-video{
+                    text-align: left;
+                    max-width: 60%;
+
+                  
+
+                  
+                }
+            }
+        }
+        
+    }
+
+
+}
+
+@media(max-width:915px){
+    .mobile-view{
+        .landing-page{
+            padding: 0 20px;
+            .absolute-hand{
+                display: none;
+            }
+
+       
+
+            .main-information{
+                max-width: 100%;
+
+                text-align: center;
+             
+
+                .wrapper-button{
+                    display: flex;
+                    justify-content: center;
+
+                    a{
+
+                        img{
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // for problem page
+
+        .problem{
+
+            .center{
+                flex-direction: column;
+                justify-content: flex-start;
+                > div{
+                    max-width: 100% !important;
+                    text-align: center !important;
+                    margin: 0;
+                }
+
+                .queue{
+
+                    img{
+                        max-width:100%;
+                    }
+                }
+
+                .define-problems{
+                    margin-top: -60px;  
+                }
+
+            
+             
+              
+            }
+        }
+
+        .introduction{
+
+            .center{
+                flex-direction: column;
+                justify-content: flex-start;
+                > div{
+                    max-width: 100% !important;
+                    text-align: center !important;
+                    margin: 0;
+                }
+
+                .about-video{
+                    margin-top: 50px;
+                }
+
+                .video{
+                    margin-top: 50px;
+
+                    img{
+                        max-width:100%;
+                    }
+                }
+
+            
+             
+              
+            }
+        }
+
+        
+    }
+}
+
+@media(max-width:550px){
+    .mobile-view{
+        .landing-page{
+
+            .main-information{
+                .wrapper-button{
+                    a{
+                        img{
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // for problem page
+
+
+        // for introduction
+
+        .introduction{
+            .center{
+                .video{
+                    img{
+                        height: 250px;
+                    }
+                }
+            }
+        }
+
+
+
+    }
 }

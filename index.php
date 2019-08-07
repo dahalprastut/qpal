@@ -185,11 +185,75 @@
 
     </div>
 
+
+ <!-- for mobile view -->
+
+
+    <div class="mobile-view">
+
+    <!-- landing page start -->
+        <div class="landing-page">
+            <div class="absolute-hand">
+                <img src="images/mobile-first.png" alt="mobile">
+            </div>
+
+            <div class="center">
+                <div class="main-information">
+                    <h1>Qpal</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maiores illo quae mollitia ea nemo corporis repellat, consequuntur obcaecati sed magnam sunt 
+                    </p>
+                    <div class="wrapper-button">
+                        <a href="#" class="btn">
+                            <img src="images/google.png" alt="playstore">
+                        </a>
+                        <a href="#" class="btn">
+                            <img src="images/google.png" alt="appstore">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    <!-- problem start -->
+
+        <div class="problem">
+            <div class="center">
+                <div class="queue">
+                    <img src="images/queue.png" alt="queue">
+                </div>
+                <div class="define-problems">
+                    <h2>Problem?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos sequi, reiciendis mollitia fuga et architecto expedita modi unde hic.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="introduction">
+            <div class="center">
+                <div class="about-video">
+                    <h2>Introducting Qpal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos sequi, reiciendis mollitia fuga et architecto expedita modi unde hic.</p>
+                </div>
+                <div class="video">
+                    <img src="images/jump.png" alt="queue">
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+
     <!-- start scroller -->
-        <script type="text/javascript" src="plugins/skrollr.min.js"></script>
-        <script type="text/javascript">
-            var s = skrollr.init();
-        </script>
+
+
+            <script type="text/javascript" src="plugins/skrollr.min.js"></script>
+            <script type="text/javascript">
+                var s = skrollr.init();
+            </script>
+    
  <!-- end scroller -->
 
 

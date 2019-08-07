@@ -10,10 +10,20 @@ body {
 img {
   display: block; }
 
+.center {
+  max-width: 1000px;
+  margin: auto; }
+
 .clearfix::after {
   content: '';
   display: block;
   clear: both; }
+
+.desktop {
+  display: block; }
+
+.mobile-view {
+  display: none; }
 
 .fixed {
   position: fixed;
@@ -260,6 +270,9 @@ img {
         font-size: 34px;
         margin-top: 30px; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 @media (max-width: 1630px) {
   .container #first .mobile-first img {
     height: 680px; }
@@ -347,5 +360,119 @@ img {
   .container #fourth .absolute-description div {
     right: 5%;
     width: 600px; } }
+@media (max-width: 1400px) {
+  .desktop {
+    display: none; }
+
+  .mobile-view {
+    display: block; }
+    .mobile-view > div {
+      height: 652px; }
+    .mobile-view h1, .mobile-view h2 {
+      font-size: 60px;
+      color: #fff; }
+    .mobile-view p {
+      font-size: 20px;
+      margin-top: 25px; }
+    .mobile-view .landing-page {
+      background: linear-gradient(to right, #3b6dcc, #2fb0dd);
+      max-width: 100%;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .mobile-view .landing-page .absolute-hand {
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+        .mobile-view .landing-page .absolute-hand img {
+          height: 700px; }
+      .mobile-view .landing-page .center {
+        display: flex;
+        justify-content: flex-end; }
+      .mobile-view .landing-page .main-information {
+        margin-top: -160px;
+        max-width: 60%; }
+        .mobile-view .landing-page .main-information .wrapper-button {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 25px; }
+          .mobile-view .landing-page .main-information .wrapper-button a {
+            margin-right: 20px; }
+            .mobile-view .landing-page .main-information .wrapper-button a img {
+              height: 60px; }
+    .mobile-view .problem {
+      padding: 0 20px; }
+      .mobile-view .problem .center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%; }
+        .mobile-view .problem .center .queue img {
+          height: 400px; }
+        .mobile-view .problem .center .define-problems {
+          text-align: left;
+          max-width: 60%;
+          margin-left: 20px; }
+          .mobile-view .problem .center .define-problems h2 {
+            color: #3b6dcc; }
+    .mobile-view .introduction {
+      background: linear-gradient(to right, #3b6dcc, #2fb0dd);
+      padding: 0 20px; }
+      .mobile-view .introduction .center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%; }
+        .mobile-view .introduction .center .video {
+          margin-left: 20px; }
+          .mobile-view .introduction .center .video img {
+            height: 400px; }
+        .mobile-view .introduction .center .about-video {
+          text-align: left;
+          max-width: 60%; } }
+@media (max-width: 915px) {
+  .mobile-view .landing-page {
+    padding: 0 20px; }
+    .mobile-view .landing-page .absolute-hand {
+      display: none; }
+    .mobile-view .landing-page .main-information {
+      max-width: 100%;
+      text-align: center; }
+      .mobile-view .landing-page .main-information .wrapper-button {
+        display: flex;
+        justify-content: center; }
+        .mobile-view .landing-page .main-information .wrapper-button a img {
+          height: 80px; }
+  .mobile-view .problem .center {
+    flex-direction: column;
+    justify-content: flex-start; }
+    .mobile-view .problem .center > div {
+      max-width: 100% !important;
+      text-align: center !important;
+      margin: 0; }
+    .mobile-view .problem .center .queue img {
+      max-width: 100%; }
+    .mobile-view .problem .center .define-problems {
+      margin-top: -60px; }
+  .mobile-view .introduction .center {
+    flex-direction: column;
+    justify-content: flex-start; }
+    .mobile-view .introduction .center > div {
+      max-width: 100% !important;
+      text-align: center !important;
+      margin: 0; }
+    .mobile-view .introduction .center .about-video {
+      margin-top: 50px; }
+    .mobile-view .introduction .center .video {
+      margin-top: 50px; }
+      .mobile-view .introduction .center .video img {
+        max-width: 100%; } }
+@media (max-width: 550px) {
+  .mobile-view .landing-page .main-information .wrapper-button a img {
+    height: 40px; }
+  .mobile-view .introduction .center .video img {
+    height: 250px; } }
 
 /*# sourceMappingURL=style.css.map */
