@@ -140,7 +140,7 @@
 
 
                         <div class="fourth-image fourth-image-fourth">
-                            <img src="images/token_screen.png" alt="question">
+                            <img src="images/Token_screen.png" alt="question">
                         </div>
 
                         <div class="fifth-image fifth-image-fourth">
