@@ -1,13 +1,162 @@
 
 
+let mobileFirst, linkButtons, imageOne, imageTwo, imageThree, imageFour, problemOne, problemTwo, problemThree, jumping, magicMobile, secondMagicMobile, problem, firstDescription, secondDescription, thirdDescription, fourthDescription, fourthMobileFirst, fourthMobileSecond, fourthMobileThird, fourthMobileFourth, fourthMobileFifth, fourthDescriptionFirst, fourthDescriptionSecond, fourthDescriptionThird,fourthDescriptionFourth, fourthDescriptionFifth, activeBtn, hiddenBtn, second, third, fourth, forDefault, forNinety, forHundredFifty, forHundredTen, forHundredTwenty, initialize, scrollTop, forDefaultClick, forNinetyClick, forHundredTenClick, forHundredTwentyClick, forHundredFiftyClick;
+
+initialize = ()=>{
+    // for first section
+     mobileFirst = document.querySelector('.mobile-first');
+     linkButtons = document.querySelector('.main-information');
 
 
-// for first section
-var mobileFirst = document.querySelector('.mobile-first');
-var linkButtons = document.querySelector('.main-information');
+
+
+
+    // for second section
+
+     imageOne = document.querySelector('#image-1');
+     imageTwo = document.querySelector('#image-2');
+     imageThree = document.querySelector('#image-3');
+     imageFour = document.querySelector('#image-4');
+
+     problemOne = document.querySelector('.problem-1');
+     problemTwo = document.querySelector('.problem-2');
+     problemThree = document.querySelector('.problem-3');
+
+
+    // for third section variable
+
+
+     jumping = document.querySelector('.first-image-third');
+     magicMobile = document.querySelector('.second-image-third');
+     secondMagicMobile = document.querySelector('.third-image-third');
+     problem = document.querySelector('.fourth-image-third');
+
+
+     firstDescription = document.querySelector('.first-description-third');
+     secondDescription = document.querySelector('.second-description-third');
+     thirdDescription = document.querySelector('.third-description-third');
+     fourthDescription = document.querySelector('.fourth-description-third');
+
+
+    // for fourth section variable
+
+
+     fourthMobileFirst = document.querySelector('.first-image-fourth');
+     fourthMobileSecond = document.querySelector('.second-image-fourth');
+     fourthMobileThird = document.querySelector('.third-image-fourth');
+     fourthMobileFourth = document.querySelector('.fourth-image-fourth');
+     fourthMobileFifth = document.querySelector('.fifth-image-fourth');
+
+
+     fourthDescriptionFirst = document.querySelector('.first-description-fourth');
+     fourthDescriptionSecond = document.querySelector('.second-description-fourth');
+     fourthDescriptionThird = document.querySelector('.third-description-fourth');
+     fourthDescriptionFourth = document.querySelector('.fourth-description-fourth');
+     fourthDescriptionFifth = document.querySelector('.fifth-description-fourth');
+
+
+    // for buttons variables
+
+     activeBtn = document.querySelector('.active-btn');
+     hiddenBtn = document.querySelector('.hidden-btn');
+
+    // for logo variable
+
+     logo = document.querySelector('.logo');
+
+    // for storing horizontal height of sections
+
+     second = document.querySelector('#second').getBoundingClientRect().left;
+     third = document.querySelector('#third').getBoundingClientRect().left;
+     fourth = document.querySelector('#fourth').getBoundingClientRect().left;
+
+}
+
+initialize();
+
+
+// -----
 
 
 window.onload = ()=>{    // animation of first section
+    onloadFunction();
+}
+
+
+
+window.addEventListener('scroll' , (event)=>{
+    // default screen size
+   
+    forDefault();
+
+    // for second 90%
+    forNinety();
+
+    // for 110%
+    forHundredTen();
+  
+    // for 120%
+    forHundredTwenty();
+
+    // for 150%
+    forHundredFifty();
+
+
+});
+
+
+// second section ends
+
+
+
+
+
+
+
+
+
+activeBtn.onclick = function(event){
+    event.preventDefault();
+
+    forDefaultClick();
+
+
+    // for 90%
+
+    forNinetyClick();
+    
+
+    // for 110%
+
+    forHundredTenClick();
+
+    // for 120%
+
+    forHundredTwentyClick();
+
+    // for 150%
+
+    forHundredFiftyClick();
+
+
+
+
+}
+
+// ---------- navigation btns start
+
+// go on top 
+
+
+
+
+hiddenBtn.onclick =()=> scrollTop(event);
+logo.onclick =()=> scrollTop(event);
+
+// -------------
+
+
+onloadFunction = ()=>{
     window.setTimeout(()=>{
 
         mobileFirst.style='margin:0';
@@ -17,79 +166,9 @@ window.onload = ()=>{    // animation of first section
         linkButtons.style = 'opacity:1';
         
     },2000);
-
-    // window.scrollTo({
-    //     top:0
-    // })
 }
 
-
-// first section ends
-
-
-// for second section
-
-var imageOne = document.querySelector('#image-1');
-var imageTwo = document.querySelector('#image-2');
-var imageThree = document.querySelector('#image-3');
-var imageFour = document.querySelector('#image-4');
-
-var problemOne = document.querySelector('.problem-1');
-var problemTwo = document.querySelector('.problem-2');
-var problemThree = document.querySelector('.problem-3');
-
-
-// for third section variable
-
-
-var jumping = document.querySelector('.first-image-third');
-var magicMobile = document.querySelector('.second-image-third');
-var secondMagicMobile = document.querySelector('.third-image-third');
-var problem = document.querySelector('.fourth-image-third');
-
-
-var firstDescription = document.querySelector('.first-description-third');
-var secondDescription = document.querySelector('.second-description-third');
-var thirdDescription = document.querySelector('.third-description-third');
-var fourthDescription = document.querySelector('.fourth-description-third');
-
-
-// for fourth section variable
-
-
-var fourthMobileFirst = document.querySelector('.first-image-fourth');
-var fourthMobileSecond = document.querySelector('.second-image-fourth');
-var fourthMobileThird = document.querySelector('.third-image-fourth');
-var fourthMobileFourth = document.querySelector('.fourth-image-fourth');
-var fourthMobileFifth = document.querySelector('.fifth-image-fourth');
-
-
-var fourthDescriptionFirst = document.querySelector('.first-description-fourth');
-var fourthDescriptionSecond = document.querySelector('.second-description-fourth');
-var fourthDescriptionThird = document.querySelector('.third-description-fourth');
-var fourthDescriptionFourth = document.querySelector('.fourth-description-fourth');
-var fourthDescriptionFifth = document.querySelector('.fifth-description-fourth');
-
-
-// for buttons variables
-
-var activeBtn = document.querySelector('.active-btn');
-var hiddenBtn = document.querySelector('.hidden-btn');
-
-// for logo variable
-
-var logo = document.querySelector('.logo');
-
-// for storing horizontal height of sections
-
-var second = document.querySelector('#second').getBoundingClientRect().left;
-var third = document.querySelector('#third').getBoundingClientRect().left;
-var fourth = document.querySelector('#fourth').getBoundingClientRect().left;
-
-
-window.addEventListener('scroll' , (event)=>{
-    // console.log('event' , window.scrollY);
-
+forDefault = ()=>{
     if( window.innerWidth < 2133){  //window.innerWidth >= 1920 &&
 
         if(window.innerWidth > 1630){
@@ -129,7 +208,7 @@ window.addEventListener('scroll' , (event)=>{
     
     
         
-        if(window.scrollY > 1430){   //last changes
+        if(window.scrollY > 1430){   
             // third
 
             if(window.scrollY >= 2500 && window.scrollY < 2800){
@@ -421,10 +500,10 @@ window.addEventListener('scroll' , (event)=>{
     
     
     }
+}
 
 
-    // for second 90%
-
+forNinety = ()=>{
     if(window.innerWidth >= 2133 ){  // && window.innerWidth < 2400
         if(window.scrollY >= 1100 && window.scrollY < 1300){
             imageOne.style='opacity:0;';
@@ -749,9 +828,10 @@ window.addEventListener('scroll' , (event)=>{
             hiddenBtn.style='display:none';
         }
     }
+}
 
-    // for 110%
 
+forHundredTen = ()=>{
     if(window.innerWidth <= 1745 && window.innerWidth > 1430){
 
 
@@ -932,12 +1012,9 @@ window.addEventListener('scroll' , (event)=>{
             hiddenBtn.style='display:none';
         }
     }
+}
 
-   
-
-    // for 120%
-
-
+forHundredTwenty = ()=>{
     if(window.innerWidth <= 1630 && window.innerWidth > 1430){
 
         // second
@@ -1266,10 +1343,10 @@ window.addEventListener('scroll' , (event)=>{
     
        
     }
+}
 
 
-    // for 150%
-
+forHundredFifty = ()=>{
     if(window.innerWidth <= 1430){
 
         // second
@@ -1597,25 +1674,13 @@ window.addEventListener('scroll' , (event)=>{
         }
     
     }
+}
 
 
 
+// scroll
 
-
-
-
-});
-
-
-// second section ends
-
-
-// ---------- navigation btns start
-
-// go on top 
-
-
-var scrollTop = (event)=>{
+scrollTop = (event)=>{
     event.preventDefault();
     window.scrollTo({
         top:0,
@@ -1623,18 +1688,9 @@ var scrollTop = (event)=>{
     });
 }
 
-hiddenBtn.onclick =()=> scrollTop(event);
-logo.onclick =()=> scrollTop(event);
+// click animation
 
-// 
-
-
-
-
-
-activeBtn.onclick = function(event){
-    event.preventDefault();
-
+forDefaultClick = ()=>{
     if(window.innerWidth < 2133){  //window.innerWidth >= 1746 && 
 
         if(window.scrollY <= 800){
@@ -1658,10 +1714,9 @@ activeBtn.onclick = function(event){
             });
         }
     }
+}
 
-
-    // for 90%
-
+forNinetyClick = ()=>{
     if(window.innerWidth >= 2133){
 
         if(window.scrollY <= 800){
@@ -1685,9 +1740,9 @@ activeBtn.onclick = function(event){
             });
         }
     }
+}
 
-    // for 110%
-
+forHundredTenClick = ()=>{
     if(window.innerWidth <= 1745){
 
         if(window.scrollY <= 800){
@@ -1706,15 +1761,14 @@ activeBtn.onclick = function(event){
         }
         if(window.scrollY > 2300 ){
             window.scrollTo({
-                top:fourth - 1400,
+                top:fourth - 1350,
                 behavior: 'smooth'
             });
         }
     }
+}
 
-    // for 120%
-
-    // alert(window.scrollY);
+forHundredTwentyClick = ()=>{
     if(window.innerWidth <= 1630 && window.innerWidth > 1430){
 
         if(window.scrollY <= 800){
@@ -1748,7 +1802,9 @@ activeBtn.onclick = function(event){
 
 
     }
+}
 
+forHundredFiftyClick = ()=>{
     if(window.innerWidth <= 1430){
 
         if(window.scrollY <= 667){
@@ -1782,17 +1838,11 @@ activeBtn.onclick = function(event){
 
 
     }
-
-
-
-
 }
 
 
 
 
-
-
-// -------------------
+ // -------------------
 
 
