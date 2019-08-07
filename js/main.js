@@ -128,294 +128,298 @@ window.addEventListener('scroll' , (event)=>{
         }
     
     
-        // third
-    
-    
-        if(window.scrollY >= 2500 && window.scrollY < 2800){
-            
-            jumping.style=' opacity:0; top:40%; left:3%';
-            secondMagicMobile.style ='opacity:0; top:10%; left:3%';
-            magicMobile.style='opacity: 1 ;top:20%;left:8%; ';
-    
-    
-            problem.style ='opacity:0; top:10%; left:3%';
-    
-            firstDescription.style='opacity:0;'
-            secondDescription.style='opacity:1;'
-            thirdDescription.style='opacity:0';
-            fourthDescription.style='opacity:0';
-          
-        }
-    
-        if(window.scrollY < 2500){
-            jumping.style=' opacity: 1; top:20%;left:8%;';
-            magicMobile.style='opacity:0; top:10%; left:3%; ';
-            secondMagicMobile.style ='opacity:0; top:10%; left:3%';
-    
-            problem.style ='opacity:0; top:10%; left:3%';
-            
-            
-    
-    
-            firstDescription.style='opacity:1;'
-            secondDescription.style='opacity:0;'
-            thirdDescription.style='opacity:0';
-            fourthDescription.style='opacity:0';
-            
-            
-        }
-    
-        // 
-    
-    
-        if(window.scrollY >= 2800 && window.scrollY >= 2500){
-            secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
-            jumping.style=' opacity:0; top:40%; left:3%';
-            magicMobile.style=' opacity:0; top:40%; left:3%';
-    
-            problem.style ='opacity:0; top:10%; left:3%';
-            
-    
-    
-        firstDescription.style='opacity:0;'
-            secondDescription.style='opacity:0;'
-            thirdDescription.style='opacity:1;'
-            fourthDescription.style='opacity:0';
-            
-          
-          
-        }
-    
-        if(window.scrollY < 2800 && window.scrollY >=2500){
-            magicMobile.style=' opacity: 1; top:20%;left:8%;';
-            secondMagicMobile.style='opacity:0; top:10%; left:3%; ';
-            jumping.style=' opacity:0; top:40%; left:3%';
-    
-            problem.style ='opacity:0; top:10%; left:3%';
-            
-    
-            firstDescription.style='opacity:0;'
-            secondDescription.style='opacity:1;'
-            thirdDescription.style='opacity:0;'
-            fourthDescription.style='opacity:0';
-            
-        }
-    
-        // 
-    
-        if(window.scrollY >= 3200 && window.scrollY >= 2800){
-    
-            secondMagicMobile.style='opacity: 0 ;top:40%;left:3%; ';
-            jumping.style=' opacity:0; top:40%; left:3%';
-            magicMobile.style=' opacity:0; top:40%; left:3%';
-    
-            problem.style ='opacity:1; top:20%; left:8%';
-    
-            
-            firstDescription.style='opacity:0;'
-            secondDescription.style='opacity:0;'
-            thirdDescription.style='opacity:0;'
-            fourthDescription.style='opacity:1';
-    
-        }
-    
-        if(window.scrollY < 3200 && window.scrollY >= 2800){
-    
-            secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
-            jumping.style=' opacity:0; top:40%; left:3%';
-            magicMobile.style=' opacity:0; top:40%; left:3%';
-    
-            problem.style ='opacity:0; top:10%; left:3%';
-    
-            firstDescription.style='opacity:0;'
-            secondDescription.style='opacity:0;'
-            thirdDescription.style='opacity:1;'
-            fourthDescription.style='opacity:0';
-            
-    
-    
-     
-    
-        }
-    
-        // fourth
-    
-    
-        if(window.scrollY >= 4400 && window.scrollY < 4700){
-            
-            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
-            fourthMobileThird.style ='opacity:0; top:10%; left:3%';
-            fourthMobileSecond.style='opacity: 1 ;top:20%;left:8%; ';
-    
-    
-            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
-            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
-    
-            fourthDescriptionFirst.style='opacity:0;'
-            fourthDescriptionSecond.style='opacity:1;'
-            fourthDescriptionThird.style='opacity:0';
-            fourthDescriptionFourth.style='opacity:0';
-            fourthDescriptionFifth.style='opacity:0';
-            
-          
-        }
-    
-        if(window.scrollY < 4400){
-            fourthMobileFirst.style=' opacity: 1; top:20%;left:8%;';
-            fourthMobileSecond.style='opacity:0; top:10%; left:3%; ';
-            fourthMobileThird.style ='opacity:0; top:10%; left:3%';
-    
-            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
-            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
-            
-            
-    
-    
-            fourthDescriptionFirst.style='opacity:1;'
-            fourthDescriptionSecond.style='opacity:0;'
-            fourthDescriptionThird.style='opacity:0';
-            fourthDescriptionFourth.style='opacity:0';
-            fourthDescriptionFifth.style='opacity:0';
-            
-            
-            
-        }
-    
-        // 
-    
-    
-        if(window.scrollY >= 4700 && window.scrollY >= 4400){
-            fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
-            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
-            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
-    
-            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
-            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
-            
-    
-    
-            fourthDescriptionFirst.style='opacity:0;'
-            fourthDescriptionSecond.style='opacity:0;'
-            fourthDescriptionThird.style='opacity:1;'
-            fourthDescriptionFourth.style='opacity:0';
-            fourthDescriptionFifth.style='opacity:0';
-            
-            
-          
-          
-        }
-    
-        if(window.scrollY < 4700 && window.scrollY >=4400){
-            fourthMobileSecond.style=' opacity: 1; top:20%;left:8%;';
-            fourthMobileThird.style='opacity:0; top:10%; left:3%; ';
-            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
-    
-            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
-            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
-            
-    
-            fourthDescriptionFirst.style='opacity:0;'
-            fourthDescriptionSecond.style='opacity:1;'
-            fourthDescriptionThird.style='opacity:0;'
-            fourthDescriptionFourth.style='opacity:0';
-            fourthDescriptionFifth.style='opacity:0';
-            
-            
-        }
-    
-        // 
-    
-        if(window.scrollY >= 5100 && window.scrollY >= 4700){
-    
-            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
-            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
-            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
-    
-            fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
-            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
-    
-            
-            fourthDescriptionFirst.style='opacity:0;'
-            fourthDescriptionSecond.style='opacity:0;'
-            fourthDescriptionThird.style='opacity:0;'
-            fourthDescriptionFourth.style='opacity:1';
-            fourthDescriptionFifth.style='opacity:0';
-            
-    
-        }
-    
-        if(window.scrollY < 5100 && window.scrollY >= 4700){
-    
-            fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
-            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
-            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
-    
-            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
-            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
-    
-            fourthDescriptionFirst.style='opacity:0;'
-            fourthDescriptionSecond.style='opacity:0;'
-            fourthDescriptionThird.style='opacity:1;'
-            fourthDescriptionFourth.style='opacity:0';
-            fourthDescriptionFifth.style='opacity:0';
-            
-            
-    
-        }
-    
         
-        if(window.scrollY >= 5500 && window.scrollY >= 5100){
-    
-            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
-            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
-            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
-    
-            fourthMobileFourth.style ='opacity:0; top:40%; left:3%';
-            fourthMobileFifth.style ='opacity:1; top:20%; left:8%';
-    
-            
-            fourthDescriptionFirst.style='opacity:0;'
-            fourthDescriptionSecond.style='opacity:0;'
-            fourthDescriptionThird.style='opacity:0;'
-            fourthDescriptionFourth.style='opacity:0';
-            fourthDescriptionFifth.style='opacity:1';
-    
-        }
-    
-        if(window.scrollY < 5500 && window.scrollY >= 5100){
-    
-            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
-            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
-            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
-    
-            fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
-            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
-    
-            fourthDescriptionFirst.style='opacity:0;'
-            fourthDescriptionSecond.style='opacity:0;'
-            fourthDescriptionThird.style='opacity:0;'
-            fourthDescriptionFourth.style='opacity:1';
-            fourthDescriptionFifth.style='opacity:0';
-            
-            
-    
-        }
-    
-    
-    
-    
-        // for mouse and hand 
+        if(window.scrollY > 1430){   //last changes
+            // third
+
+            if(window.scrollY >= 2500 && window.scrollY < 2800){
+                
+                jumping.style=' opacity:0; top:40%; left:3%';
+                secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+                magicMobile.style='opacity: 1 ;top:20%;left:8%; ';
         
-        if(window.scrollY >= 5500){
-            activeBtn.style = 'display:none';
-            hiddenBtn.style='display:block';
+        
+                problem.style ='opacity:0; top:10%; left:3%';
+        
+                firstDescription.style='opacity:0;'
+                secondDescription.style='opacity:1;'
+                thirdDescription.style='opacity:0';
+                fourthDescription.style='opacity:0';
+              
+            }
+        
+            if(window.scrollY < 2500){
+                jumping.style=' opacity: 1; top:20%;left:8%;';
+                magicMobile.style='opacity:0; top:10%; left:3%; ';
+                secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+        
+                problem.style ='opacity:0; top:10%; left:3%';
+                
+                
+        
+        
+                firstDescription.style='opacity:1;'
+                secondDescription.style='opacity:0;'
+                thirdDescription.style='opacity:0';
+                fourthDescription.style='opacity:0';
+                
+                
+            }
+        
+            // 
+        
+        
+            if(window.scrollY >= 2800 && window.scrollY >= 2500){
+                secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+                jumping.style=' opacity:0; top:40%; left:3%';
+                magicMobile.style=' opacity:0; top:40%; left:3%';
+        
+                problem.style ='opacity:0; top:10%; left:3%';
+                
+        
+        
+            firstDescription.style='opacity:0;'
+                secondDescription.style='opacity:0;'
+                thirdDescription.style='opacity:1;'
+                fourthDescription.style='opacity:0';
+                
+              
+              
+            }
+        
+            if(window.scrollY < 2800 && window.scrollY >=2500){
+                magicMobile.style=' opacity: 1; top:20%;left:8%;';
+                secondMagicMobile.style='opacity:0; top:10%; left:3%; ';
+                jumping.style=' opacity:0; top:40%; left:3%';
+        
+                problem.style ='opacity:0; top:10%; left:3%';
+                
+        
+                firstDescription.style='opacity:0;'
+                secondDescription.style='opacity:1;'
+                thirdDescription.style='opacity:0;'
+                fourthDescription.style='opacity:0';
+                
+            }
+        
+            // 
+        
+            if(window.scrollY >= 3200 && window.scrollY >= 2800){
+        
+                secondMagicMobile.style='opacity: 0 ;top:40%;left:3%; ';
+                jumping.style=' opacity:0; top:40%; left:3%';
+                magicMobile.style=' opacity:0; top:40%; left:3%';
+        
+                problem.style ='opacity:1; top:20%; left:8%';
+        
+                
+                firstDescription.style='opacity:0;'
+                secondDescription.style='opacity:0;'
+                thirdDescription.style='opacity:0;'
+                fourthDescription.style='opacity:1';
+        
+            }
+        
+            if(window.scrollY < 3200 && window.scrollY >= 2800){
+        
+                secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+                jumping.style=' opacity:0; top:40%; left:3%';
+                magicMobile.style=' opacity:0; top:40%; left:3%';
+        
+                problem.style ='opacity:0; top:10%; left:3%';
+        
+                firstDescription.style='opacity:0;'
+                secondDescription.style='opacity:0;'
+                thirdDescription.style='opacity:1;'
+                fourthDescription.style='opacity:0';
+                
+        
+        
+         
+        
+            }
+        
+            // fourth
+        
+        
+            if(window.scrollY >= 4400 && window.scrollY < 4700){
+                
+                fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+                fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+                fourthMobileSecond.style='opacity: 1 ;top:20%;left:8%; ';
+        
+        
+                fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+        
+                fourthDescriptionFirst.style='opacity:0;'
+                fourthDescriptionSecond.style='opacity:1;'
+                fourthDescriptionThird.style='opacity:0';
+                fourthDescriptionFourth.style='opacity:0';
+                fourthDescriptionFifth.style='opacity:0';
+                
+              
+            }
+        
+            if(window.scrollY < 4400){
+                fourthMobileFirst.style=' opacity: 1; top:20%;left:8%;';
+                fourthMobileSecond.style='opacity:0; top:10%; left:3%; ';
+                fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+        
+                fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+                
+                
+        
+        
+                fourthDescriptionFirst.style='opacity:1;'
+                fourthDescriptionSecond.style='opacity:0;'
+                fourthDescriptionThird.style='opacity:0';
+                fourthDescriptionFourth.style='opacity:0';
+                fourthDescriptionFifth.style='opacity:0';
+                
+                
+                
+            }
+        
+            // 
+        
+        
+            if(window.scrollY >= 4700 && window.scrollY >= 4400){
+                fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+                fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+        
+                fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+                
+        
+        
+                fourthDescriptionFirst.style='opacity:0;'
+                fourthDescriptionSecond.style='opacity:0;'
+                fourthDescriptionThird.style='opacity:1;'
+                fourthDescriptionFourth.style='opacity:0';
+                fourthDescriptionFifth.style='opacity:0';
+                
+                
+              
+              
+            }
+        
+            if(window.scrollY < 4700 && window.scrollY >=4400){
+                fourthMobileSecond.style=' opacity: 1; top:20%;left:8%;';
+                fourthMobileThird.style='opacity:0; top:10%; left:3%; ';
+                fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+        
+                fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+                
+        
+                fourthDescriptionFirst.style='opacity:0;'
+                fourthDescriptionSecond.style='opacity:1;'
+                fourthDescriptionThird.style='opacity:0;'
+                fourthDescriptionFourth.style='opacity:0';
+                fourthDescriptionFifth.style='opacity:0';
+                
+                
+            }
+        
+            // 
+        
+            if(window.scrollY >= 5100 && window.scrollY >= 4700){
+        
+                fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+                fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+        
+                fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+                fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+        
+                
+                fourthDescriptionFirst.style='opacity:0;'
+                fourthDescriptionSecond.style='opacity:0;'
+                fourthDescriptionThird.style='opacity:0;'
+                fourthDescriptionFourth.style='opacity:1';
+                fourthDescriptionFifth.style='opacity:0';
+                
+        
+            }
+        
+            if(window.scrollY < 5100 && window.scrollY >= 4700){
+        
+                fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+                fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+        
+                fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+        
+                fourthDescriptionFirst.style='opacity:0;'
+                fourthDescriptionSecond.style='opacity:0;'
+                fourthDescriptionThird.style='opacity:1;'
+                fourthDescriptionFourth.style='opacity:0';
+                fourthDescriptionFifth.style='opacity:0';
+                
+                
+        
+            }
+        
+            
+            if(window.scrollY >= 5500 && window.scrollY >= 5100){
+        
+                fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+                fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+        
+                fourthMobileFourth.style ='opacity:0; top:40%; left:3%';
+                fourthMobileFifth.style ='opacity:1; top:20%; left:8%';
+        
+                
+                fourthDescriptionFirst.style='opacity:0;'
+                fourthDescriptionSecond.style='opacity:0;'
+                fourthDescriptionThird.style='opacity:0;'
+                fourthDescriptionFourth.style='opacity:0';
+                fourthDescriptionFifth.style='opacity:1';
+        
+            }
+        
+            if(window.scrollY < 5500 && window.scrollY >= 5100){
+        
+                fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+                fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+        
+                fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+                fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+        
+                fourthDescriptionFirst.style='opacity:0;'
+                fourthDescriptionSecond.style='opacity:0;'
+                fourthDescriptionThird.style='opacity:0;'
+                fourthDescriptionFourth.style='opacity:1';
+                fourthDescriptionFifth.style='opacity:0';
+                
+                
+        
+            }
+        
+        
+        
+        
+            // for mouse and hand 
+            
+            if(window.scrollY >= 5500){
+                activeBtn.style = 'display:none';
+                hiddenBtn.style='display:block';
+            }
+        
+        
+            if(window.scrollY < 5500){
+                activeBtn.style = 'display:block';
+                hiddenBtn.style='display:none';
+            }
         }
     
     
-        if(window.scrollY < 5500){
-            activeBtn.style = 'display:block';
-            hiddenBtn.style='display:none';
-        }
     }
 
 
@@ -748,7 +752,7 @@ window.addEventListener('scroll' , (event)=>{
 
     // for 110%
 
-    if(window.innerWidth <= 1745){
+    if(window.innerWidth <= 1745 && window.innerWidth > 1430){
 
 
         // foruth
@@ -934,49 +938,47 @@ window.addEventListener('scroll' , (event)=>{
     // for 120%
 
 
-    if(window.innerWidth <= 1630){
+    if(window.innerWidth <= 1630 && window.innerWidth > 1430){
 
         // second
-
-
-        if(window.scrollY >= 1000 && window.scrollY < 1200){
-            imageOne.style='opacity:0;';
-            imageTwo.style = "left:320px"
-            imageThree.style = "left:240px"
-    
-            problemTwo.style = 'display:block';
-            problemOne.style = 'display:none';
-            problemThree.style='display:none'
-    
-        }
-    
-        if(window.scrollY < 1000){
-            
-            imageOne.style='opacity:1';
-            imageTwo.style = "left:240px"
-            imageThree.style = "left:180px"
-            
-    
-            problemOne.style = 'display:block';
-            problemTwo.style = 'display:none';
-            problemThree.style = 'display:none';
-        }
-    
-        if(window.scrollY >= 1200){
-          
-            imageTwo.style='opacity:0; left:320px';
-            imageThree.style = "left:320px"
-    
-            problemOne.style = 'display:none';
-            problemTwo.style = 'display:none';
-            problemThree.style = 'display:block';
-        }
+            if(window.scrollY >= 1000 && window.scrollY < 1200){
+                imageOne.style='opacity:0;';
+                imageTwo.style = "left:320px"
+                imageThree.style = "left:240px"
+        
+                problemTwo.style = 'display:block';
+                problemOne.style = 'display:none';
+                problemThree.style='display:none'
+        
+            }
+        
+            if(window.scrollY < 1000){
+                
+                imageOne.style='opacity:1';
+                imageTwo.style = "left:240px"
+                imageThree.style = "left:180px"
+                
+        
+                problemOne.style = 'display:block';
+                problemTwo.style = 'display:none';
+                problemThree.style = 'display:none';
+            }
+        
+            if(window.scrollY >= 1200){
+              
+                imageTwo.style='opacity:0; left:320px';
+                imageThree.style = "left:320px"
+        
+                problemOne.style = 'display:none';
+                problemTwo.style = 'display:none';
+                problemThree.style = 'display:block';
+            }
     
 
          // third
     
     
-         if(window.scrollY >= 2000 && window.scrollY < 2300){
+        if(window.scrollY >= 2000 && window.scrollY < 2300){
             
             jumping.style=' opacity:0; top:40%; left:3%';
             secondMagicMobile.style ='opacity:0; top:10%; left:3%';
@@ -1022,7 +1024,7 @@ window.addEventListener('scroll' , (event)=>{
             
     
     
-        firstDescription.style='opacity:0;'
+            firstDescription.style='opacity:0;'
             secondDescription.style='opacity:0;'
             thirdDescription.style='opacity:1;'
             fourthDescription.style='opacity:0';
@@ -1266,6 +1268,337 @@ window.addEventListener('scroll' , (event)=>{
     }
 
 
+    // for 150%
+
+    if(window.innerWidth <= 1430){
+
+        // second
+
+        if(window.scrollY >= 700 && window.scrollY < 900){
+            imageOne.style='opacity:0;';
+            imageTwo.style = "left:320px"
+            imageThree.style = "left:240px"
+    
+            problemTwo.style = 'display:block';
+            problemOne.style = 'display:none';
+            problemThree.style='display:none'
+    
+        }
+    
+        if(window.scrollY < 700){
+            
+            imageOne.style='opacity:1';
+            imageTwo.style = "left:240px"
+            imageThree.style = "left:180px"
+            
+    
+            problemOne.style = 'display:block';
+            problemTwo.style = 'display:none';
+            problemThree.style = 'display:none';
+        }
+    
+        if(window.scrollY >= 900){
+          
+            imageTwo.style='opacity:0; left:320px';
+            imageThree.style = "left:320px"
+    
+            problemOne.style = 'display:none';
+            problemTwo.style = 'display:none';
+            problemThree.style = 'display:block';
+        }
+
+        // third
+    
+    
+        if(window.scrollY >= 1600 && window.scrollY < 1900){
+            
+            jumping.style=' opacity:0; top:40%; left:3%';
+            secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+            magicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+    
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+    
+            firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:1;'
+            thirdDescription.style='opacity:0';
+            fourthDescription.style='opacity:0';
+          
+        }
+    
+        if(window.scrollY < 1600){
+            jumping.style=' opacity: 1; top:20%;left:8%;';
+            magicMobile.style='opacity:0; top:10%; left:3%; ';
+            secondMagicMobile.style ='opacity:0; top:10%; left:3%';
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+            
+            
+    
+    
+            firstDescription.style='opacity:1;'
+            secondDescription.style='opacity:0;'
+            thirdDescription.style='opacity:0';
+            fourthDescription.style='opacity:0';
+            
+            
+        }
+    
+        // 
+    
+    
+        if(window.scrollY >= 1900 && window.scrollY >= 1600){
+            secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+            jumping.style=' opacity:0; top:40%; left:3%';
+            magicMobile.style=' opacity:0; top:40%; left:3%';
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+            
+    
+    
+            firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:0;'
+            thirdDescription.style='opacity:1;'
+            fourthDescription.style='opacity:0';
+            
+          
+          
+        }
+    
+        if(window.scrollY < 1900 && window.scrollY >=1600){
+            magicMobile.style=' opacity: 1; top:20%;left:8%;';
+            secondMagicMobile.style='opacity:0; top:10%; left:3%; ';
+            jumping.style=' opacity:0; top:40%; left:3%';
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+            
+    
+            firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:1;'
+            thirdDescription.style='opacity:0;'
+            fourthDescription.style='opacity:0';
+            
+        }
+    
+        // 
+    
+        if(window.scrollY >= 2300 && window.scrollY >= 1900){
+    
+            secondMagicMobile.style='opacity: 0 ;top:40%;left:3%; ';
+            jumping.style=' opacity:0; top:40%; left:3%';
+            magicMobile.style=' opacity:0; top:40%; left:3%';
+    
+            problem.style ='opacity:1; top:20%; left:8%';
+    
+            
+            firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:0;'
+            thirdDescription.style='opacity:0;'
+            fourthDescription.style='opacity:1';
+    
+        }
+    
+        if(window.scrollY < 2300 && window.scrollY >= 1900){
+    
+            secondMagicMobile.style='opacity: 1 ;top:20%;left:8%; ';
+            jumping.style=' opacity:0; top:40%; left:3%';
+            magicMobile.style=' opacity:0; top:40%; left:3%';
+    
+            problem.style ='opacity:0; top:10%; left:3%';
+    
+            firstDescription.style='opacity:0;'
+            secondDescription.style='opacity:0;'
+            thirdDescription.style='opacity:1;'
+            fourthDescription.style='opacity:0';
+            
+    
+    
+     
+    
+        }
+    
+        // fourth
+
+        if(window.scrollY >= 2900 && window.scrollY < 3200){
+            
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+            fourthMobileSecond.style='opacity: 1 ;top:20%;left:8%; ';
+    
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:1;'
+            fourthDescriptionThird.style='opacity:0';
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+          
+        }
+    
+        if(window.scrollY < 2900){
+            fourthMobileFirst.style=' opacity: 1; top:20%;left:8%;';
+            fourthMobileSecond.style='opacity:0; top:10%; left:3%; ';
+            fourthMobileThird.style ='opacity:0; top:10%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+            
+            
+    
+    
+            fourthDescriptionFirst.style='opacity:1;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0';
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+            
+        }
+    
+        // 
+    
+    
+        if(window.scrollY >= 3200 && window.scrollY >= 2900){
+            fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+            
+    
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:1;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+          
+          
+        }
+    
+        if(window.scrollY < 3200 && window.scrollY >=2900){
+            fourthMobileSecond.style=' opacity: 1; top:20%;left:8%;';
+            fourthMobileThird.style='opacity:0; top:10%; left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+            
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:1;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+        }
+    
+        // 
+    
+        if(window.scrollY >= 3500 && window.scrollY >= 3200){
+    
+            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:1';
+            fourthDescriptionFifth.style='opacity:0';
+            
+    
+        }
+    
+        if(window.scrollY < 3500 && window.scrollY >= 3200){
+    
+            fourthMobileThird.style='opacity: 1 ;top:20%;left:8%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:10%; left:3%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:1;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+    
+        }
+    
+        
+        if(window.scrollY >= 3700 && window.scrollY >= 3500){
+    
+            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:0; top:40%; left:3%';
+            fourthMobileFifth.style ='opacity:1; top:20%; left:8%';
+    
+            
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:0';
+            fourthDescriptionFifth.style='opacity:1';
+    
+        }
+    
+        if(window.scrollY < 3700 && window.scrollY >= 3500){
+    
+            fourthMobileThird.style='opacity: 0 ;top:40%;left:3%; ';
+            fourthMobileFirst.style=' opacity:0; top:40%; left:3%';
+            fourthMobileSecond.style=' opacity:0; top:40%; left:3%';
+    
+            fourthMobileFourth.style ='opacity:1; top:20%; left:8%';
+            fourthMobileFifth.style ='opacity:0; top:10%; left:3%';
+    
+            fourthDescriptionFirst.style='opacity:0;'
+            fourthDescriptionSecond.style='opacity:0;'
+            fourthDescriptionThird.style='opacity:0;'
+            fourthDescriptionFourth.style='opacity:1';
+            fourthDescriptionFifth.style='opacity:0';
+            
+            
+    
+        }
+    
+    
+    
+    
+    
+        // for mouse and hand 
+        
+        if(window.scrollY >= 3700){
+            activeBtn.style = 'display:none';
+            hiddenBtn.style='display:block';
+        }
+    
+    
+        if(window.scrollY < 3700){
+            activeBtn.style = 'display:block';
+            hiddenBtn.style='display:none';
+        }
+    
+    }
+
+
 
 
 
@@ -1341,13 +1674,13 @@ activeBtn.onclick = function(event){
         
         if(window.scrollY > 800 && window.scrollY <= 2300){
             window.scrollTo({
-                top:third - 1760,
+                top:third - 1700,
                 behavior: 'smooth'
             });
         }
         if(window.scrollY > 2300 ){
             window.scrollTo({
-                top:fourth - 1710,
+                top:fourth - 1660,
                 behavior: 'smooth'
             });
         }
@@ -1382,7 +1715,7 @@ activeBtn.onclick = function(event){
     // for 120%
 
     // alert(window.scrollY);
-    if(window.innerWidth <= 1630){
+    if(window.innerWidth <= 1630 && window.innerWidth > 1430){
 
         if(window.scrollY <= 800){
     
@@ -1406,6 +1739,40 @@ activeBtn.onclick = function(event){
             });
         }
         if(window.scrollY > 3400 ){
+            alert(window.scrollY);
+            window.scrollTo({
+                top:4600,
+                behavior: 'smooth'
+            });
+        }
+
+
+    }
+
+    if(window.innerWidth <= 1430){
+
+        if(window.scrollY <= 667){
+    
+            window.scrollTo({
+                top:second - 600,
+                behavior: 'smooth'
+            });
+        }
+        
+        if(window.scrollY > 667 && window.scrollY <= 1536){
+            window.scrollTo({
+                top:third - 1000,
+                behavior: 'smooth'
+            });
+        }
+
+        if(window.scrollY > 1536 ){
+            window.scrollTo({
+                top:fourth - 950,
+                behavior: 'smooth'
+            });
+        }
+        if(window.scrollY > 2800 ){
             alert(window.scrollY);
             window.scrollTo({
                 top:4600,
