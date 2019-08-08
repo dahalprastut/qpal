@@ -231,6 +231,8 @@
             </div>
         </div>
 
+        <!-- introduction start -->
+
         <div class="introduction">
             <div class="center">
                 <div class="about-video">
@@ -243,7 +245,107 @@
               
             </div>
         </div>
+
+        <!-- working start -->
+
+        <div class="working">
+            <div class="center">
+                <div class="question">
+                    <img src="images/what.png" alt="what">
+                </div>
+                <div class="define-question">
+                    <h2>How does it work?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos sequi, reiciendis mollitia fuga et architecto expedita modi unde hic.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- steps start -->
+        
+        <div class="steps">
+            <div class="center">
+                <ul>
+                    <li>
+                        <div class="mobile">
+                            <img src="images/signup.png" alt="mobile">
+                        </div>
+
+                        <div class="about-mobile">
+                            <strong>Create an Account or Login</strong>
+                        </div>
+
+                        <div class="hidden-number">
+                            <strong>01</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mobile">
+                            <img src="images/bank_screen.png" alt="mobile">
+                        </div>
+
+                        <div class="about-mobile">
+                            <strong>Chose your desired bank</strong>
+                        </div>
+
+                        <div class="hidden-number">
+                            <strong>02</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mobile">
+                            <img src="images/branch_screen.png" alt="mobile">
+                        </div>
+
+                        <div class="about-mobile">
+                            <strong>Choose your desired branch</strong>
+                        </div>
+
+                        <div class="hidden-number">
+                            <strong>03</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mobile">
+                            <img src="images/Token_screen.png" alt="mobile">
+                        </div>
+
+                        <div class="about-mobile">
+                            <strong>Issue token from your home</strong>
+                        </div>
+
+                        <div class="hidden-number">
+                            <strong>04</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mobile">
+                            <img src="images/offline_screen.png" alt="mobile">
+                        </div>
+
+                        <div class="about-mobile">
+                            <strong>Save token to show to the bank</strong>
+                        </div>
+
+                        <div class="hidden-number">
+                            <strong>05</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- clients start -->
+
+        <div class="clients">
+            <div class="center">
+                adf
+            </div>
+        </div>
+
     </div>
+
+
+
 
 
     <!-- start scroller -->

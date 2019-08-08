@@ -402,20 +402,20 @@ img {
             margin-right: 20px; }
             .mobile-view .landing-page .main-information .wrapper-button a img {
               height: 60px; }
-    .mobile-view .problem {
+    .mobile-view .problem, .mobile-view .working {
       padding: 0 20px; }
-      .mobile-view .problem .center {
+      .mobile-view .problem .center, .mobile-view .working .center {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%; }
-        .mobile-view .problem .center .queue img {
+        .mobile-view .problem .center .queue img, .mobile-view .problem .center .question img, .mobile-view .working .center .queue img, .mobile-view .working .center .question img {
           height: 400px; }
-        .mobile-view .problem .center .define-problems {
+        .mobile-view .problem .center .define-problems, .mobile-view .problem .center .define-question, .mobile-view .working .center .define-problems, .mobile-view .working .center .define-question {
           text-align: left;
           max-width: 60%;
           margin-left: 20px; }
-          .mobile-view .problem .center .define-problems h2 {
+          .mobile-view .problem .center .define-problems h2, .mobile-view .problem .center .define-question h2, .mobile-view .working .center .define-problems h2, .mobile-view .working .center .define-question h2 {
             color: #3b6dcc; }
     .mobile-view .introduction {
       background: linear-gradient(to right, #3b6dcc, #2fb0dd);
@@ -431,7 +431,45 @@ img {
             height: 400px; }
         .mobile-view .introduction .center .about-video {
           text-align: left;
-          max-width: 60%; } }
+          max-width: 60%; }
+    .mobile-view .steps {
+      padding: 0 20px; }
+      .mobile-view .steps ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; }
+        .mobile-view .steps ul li {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          position: relative; }
+          .mobile-view .steps ul li .mobile {
+            max-width: 50%; }
+            .mobile-view .steps ul li .mobile img {
+              height: 400px; }
+          .mobile-view .steps ul li .about-mobile {
+            max-width: 50%;
+            display: flex;
+            align-items: center;
+            margin-left: 30px; }
+            .mobile-view .steps ul li .about-mobile strong {
+              color: #000;
+              font-size: 30px;
+              margin-top: -200px;
+              font-weight: 400; }
+          .mobile-view .steps ul li .hidden-number {
+            position: absolute;
+            left: 34%;
+            top: 5%;
+            z-index: -100; }
+            .mobile-view .steps ul li .hidden-number strong {
+              font-size: 160px;
+              color: #ebebeb; }
+        .mobile-view .steps ul li:nth-child(even) {
+          flex-direction: row-reverse; }
+          .mobile-view .steps ul li:nth-child(even) .hidden-number {
+            left: 45%; } }
 @media (max-width: 915px) {
   .mobile-view .landing-page {
     padding: 0 20px; }
@@ -445,16 +483,16 @@ img {
         justify-content: center; }
         .mobile-view .landing-page .main-information .wrapper-button a img {
           height: 80px; }
-  .mobile-view .problem .center {
+  .mobile-view .problem .center, .mobile-view .working .center {
     flex-direction: column;
     justify-content: flex-start; }
-    .mobile-view .problem .center > div {
+    .mobile-view .problem .center > div, .mobile-view .working .center > div {
       max-width: 100% !important;
       text-align: center !important;
       margin: 0; }
-    .mobile-view .problem .center .queue img {
+    .mobile-view .problem .center .queue img, .mobile-view .problem .center .question img, .mobile-view .working .center .queue img, .mobile-view .working .center .question img {
       max-width: 100%; }
-    .mobile-view .problem .center .define-problems {
+    .mobile-view .problem .center .define-problems, .mobile-view .problem .center .define-question, .mobile-view .working .center .define-problems, .mobile-view .working .center .define-question {
       margin-top: -60px; }
   .mobile-view .introduction .center {
     flex-direction: column;
@@ -466,13 +504,49 @@ img {
     .mobile-view .introduction .center .about-video {
       margin-top: 50px; }
     .mobile-view .introduction .center .video {
-      margin-top: 50px; }
+      margin-top: 30px; }
       .mobile-view .introduction .center .video img {
-        max-width: 100%; } }
+        max-width: 100%; }
+  .mobile-view .working .center .define-question h2 {
+    margin-top: 30px; }
+  .mobile-view .steps ul li {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dotted #eee; }
+    .mobile-view .steps ul li .mobile {
+      max-width: 100%; }
+    .mobile-view .steps ul li .about-mobile {
+      max-width: 100%;
+      margin-top: 140px; }
+    .mobile-view .steps ul li .hidden-number {
+      left: 10%; }
+  .mobile-view .steps ul li:nth-child(even) {
+    flex-direction: column; }
+    .mobile-view .steps ul li:nth-child(even) .hidden-number {
+      left: 10%; } }
 @media (max-width: 550px) {
   .mobile-view .landing-page .main-information .wrapper-button a img {
     height: 40px; }
   .mobile-view .introduction .center .video img {
-    height: 250px; } }
+    height: 250px; }
+  .mobile-view .steps {
+    margin-top: 50px; }
+    .mobile-view .steps ul li .mobile img {
+      height: 250px; }
+    .mobile-view .steps ul li .about-mobile strong {
+      font-size: 22px; }
+    .mobile-view .steps ul li .hidden-number {
+      top: 20%;
+      left: 2%; }
+      .mobile-view .steps ul li .hidden-number strong {
+        font-size: 80px; }
+    .mobile-view .steps ul li:nth-child(even) .hidden-number {
+      left: 2%; } }
+@media (max-width: 360px) {
+  .mobile-view h1, .mobile-view h2 {
+    font-size: 35px; }
+  .mobile-view p {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=style.css.map */

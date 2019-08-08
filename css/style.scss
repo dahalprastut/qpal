@@ -814,7 +814,7 @@ img{
 
         // problem start
 
-        .problem{
+        .problem, .working{
             padding: 0 20px;
             
             .center{
@@ -823,13 +823,13 @@ img{
                 align-items: center;
                 height: 100%;
 
-                .queue{
+                .queue, .question{
                     img{
                         height: 400px;
                     }
                 }
 
-                .define-problems{
+                .define-problems, .define-question{
                     text-align: left;
                     max-width: 60%;
                     margin-left: 20px;
@@ -872,6 +872,78 @@ img{
                 }
             }
         }
+
+
+        // working start
+
+        //------ same as problem-----------
+
+        // steps start
+
+        .steps{
+            padding: 0 20px;
+            // background: red;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                // align-items: center;
+                height: 100%;
+        
+
+                li{
+                    list-style:none;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+
+                    .mobile{
+                        max-width: 50%;
+                        img{
+                            height: 400px;
+                        }
+                    }
+
+                    .about-mobile{
+                        max-width: 50%;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 30px;
+
+                        strong{
+                            // display: block;
+                            color: #000;
+                            font-size: 30px;
+                            margin-top: -200px;
+                            font-weight: 400;
+
+                        }
+                    }
+
+                    .hidden-number{
+                        position: absolute;
+                        left: 34%;
+                        top:5%;
+                        z-index: -100;
+
+                        strong{
+                            font-size: 160px;
+                            color: #ebebeb;
+                            // opacity: 0.7;
+                        }
+                    }
+                }
+
+                li:nth-child(even){
+                    flex-direction: row-reverse;
+
+                    .hidden-number{
+                        left: 45%;
+                    }
+                }
+            }
+        }
         
     }
 
@@ -910,7 +982,7 @@ img{
 
         // for problem page
 
-        .problem{
+        .problem, .working{
 
             .center{
                 flex-direction: column;
@@ -921,14 +993,14 @@ img{
                     margin: 0;
                 }
 
-                .queue{
+                .queue, .question{
 
                     img{
                         max-width:100%;
                     }
                 }
 
-                .define-problems{
+                .define-problems, .define-question{
                     margin-top: -60px;  
                 }
 
@@ -937,6 +1009,8 @@ img{
               
             }
         }
+
+        // introcution start
 
         .introduction{
 
@@ -954,7 +1028,7 @@ img{
                 }
 
                 .video{
-                    margin-top: 50px;
+                    margin-top: 30px;
 
                     img{
                         max-width:100%;
@@ -964,6 +1038,54 @@ img{
             
              
               
+            }
+        }
+
+        // working start
+
+        .working{
+            .center{
+                .define-question{
+
+                    h2{
+                        margin-top: 30px; 
+                    }
+                        
+                }
+            }
+        }
+
+        // steps start
+
+        .steps{
+            ul{
+                li{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .mobile{
+                        max-width: 100%;
+                    }
+
+                    .about-mobile{
+                        max-width: 100%;
+                        margin-top: 140px;
+                    }
+
+                    .hidden-number{
+                        left:10%;
+                    }
+                    border-bottom: 1px dotted #eee;
+                }
+
+                li:nth-child(even){
+                    flex-direction: column;
+
+                    .hidden-number{
+                        left: 10%;
+                    }
+                }
             }
         }
 
@@ -1001,7 +1123,58 @@ img{
             }
         }
 
+        // for steps
+
+        .steps{
+            margin-top: 50px;
+            ul{
+                li{
+
+                    .mobile{
+
+                        img{
+
+                            height: 250px;
+                        }
+                    }
+
+                    .about-mobile{
+                        strong{
+                            font-size: 22px;
+                        }
+                    }
+                    
+                    .hidden-number{
+                        top: 20%;
+                        left: 2%;
+                        strong{
+                            font-size: 80px;
+                        }
+                    }
+                }
+
+                li:nth-child(even){
+                    .hidden-number{
+                        left:2%;
+                    }
+                }
+            }
+        }
 
 
+
+    }
+}
+
+@media (max-width:360px){
+
+    .mobile-view{
+        h1,h2{
+            font-size: 35px;
+        }
+
+        p{
+            font-size: 18px;
+        }
     }
 }
