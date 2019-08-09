@@ -375,13 +375,15 @@ img {
       font-size: 20px;
       margin-top: 25px; }
     .mobile-view .landing-page {
-      background: linear-gradient(to right, #3b6dcc, #2fb0dd);
+      background: linear-gradient(to right, rgba(59, 109, 204, 0.7), rgba(47, 176, 221, 0.7)), url(../images/parallex.jpg) 0 0 no-repeat fixed;
       max-width: 100%;
       background-size: cover;
       position: relative;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      background-position: top;
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
       .mobile-view .landing-page .absolute-hand {
         position: absolute;
         bottom: 0;
@@ -433,6 +435,7 @@ img {
           text-align: left;
           max-width: 60%; }
     .mobile-view .steps {
+      height: auto;
       padding: 0 20px; }
       .mobile-view .steps ul {
         display: flex;

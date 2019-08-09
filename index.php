@@ -336,11 +336,11 @@
 
         <!-- clients start -->
 
-        <div class="clients">
+        <!-- <div class="clients">
             <div class="center">
                 adf
             </div>
-        </div>
+        </div> -->
 
     </div>
 
