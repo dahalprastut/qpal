@@ -54,7 +54,7 @@ img{
     bottom:5%;
     left: 5%;
     
-    color: $primary-color;
+    color: #000;
     z-index: 100;
     font-size: 18px;
 
@@ -733,7 +733,7 @@ img{
 
 
 // for mobile view
-@media (max-width:1400px){
+@media (max-width:1200px){
     .desktop{
         display: none;
     }

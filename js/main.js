@@ -1,5 +1,5 @@
 
-if(window.innerWidth > 1400){
+if(window.innerWidth > 1200){
 
     let mobileFirst, linkButtons, imageOne, imageTwo, imageThree, imageFour, problemOne, problemTwo, problemThree, jumping, magicMobile, secondMagicMobile, problem, firstDescription, secondDescription, thirdDescription, fourthDescription, fourthMobileFirst, fourthMobileSecond, fourthMobileThird, fourthMobileFourth, fourthMobileFifth, fourthDescriptionFirst, fourthDescriptionSecond, fourthDescriptionThird,fourthDescriptionFourth, fourthDescriptionFifth, activeBtn, hiddenBtn, second, third, fourth, forDefault, forNinety, forHundredFifty, forHundredTen, forHundredTwenty, initialize, scrollTop, forDefaultClick, forNinetyClick, forHundredTenClick, forHundredTwentyClick, forHundredFiftyClick;
     
