@@ -310,7 +310,7 @@
                         </div>
 
                         <div class="about-mobile">
-                            <strong>Issue token from your home</strong>
+                            <strong>Issue token from your home</strong> 
                         </div>
 
                         <div class="hidden-number">
@@ -353,7 +353,10 @@
 
             <script type="text/javascript" src="plugins/skrollr.min.js"></script>
             <script type="text/javascript">
+            if(window.innerWidth > 1200){
+
                 var s = skrollr.init();
+            }
             </script>
     
  <!-- end scroller -->
