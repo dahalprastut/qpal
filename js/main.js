@@ -1,8 +1,9 @@
 
 if (window.innerWidth > 1200) {
-    alert(window.innerWidth);
 
-    let mobileFirst, linkButtons, imageOne, imageTwo, imageThree, imageFour, problemOne, problemTwo, problemThree, jumping, magicMobile, secondMagicMobile, problem, firstDescription, secondDescription, thirdDescription, fourthDescription, fourthMobileFirst, fourthMobileSecond, fourthMobileThird, fourthMobileFourth, fourthMobileFifth, fourthDescriptionFirst, fourthDescriptionSecond, fourthDescriptionThird, fourthDescriptionFourth, fourthDescriptionFifth, activeBtn, hiddenBtn, second, third, fourth, forDefault, forNinety, forHundredFifty, forHundredTen, forHundredTwenty, initialize, scrollTop, forDefaultClick, forNinetyClick, forHundredTenClick, forHundredTwentyClick, forHundredFiftyClick;
+
+
+    let mobileFirst, linkButtons, imageOne, imageTwo, imageThree, imageFour, problemOne, problemTwo, problemThree, jumping, magicMobile, secondMagicMobile, problem, firstDescription, secondDescription, thirdDescription, fourthDescription, fourthMobileFirst, fourthMobileSecond, fourthMobileThird, fourthMobileFourth, fourthMobileFifth, fourthDescriptionFirst, fourthDescriptionSecond, fourthDescriptionThird, fourthDescriptionFourth, fourthDescriptionFifth, activeBtn, hiddenBtn, second, third, fourth, forDefault, forNinety, forHundredFifty, forHundredTen, forHundredTwenty, initialize, scrollTop, forDefaultClick, forNinetyClick, forHundredTenClick, forHundredTwentyClick, forHundredFiftyClick, insideHiddenDiv,closeModel,openModel, arrow;
 
     initialize = () => {
         // for first section
@@ -62,6 +63,10 @@ if (window.innerWidth > 1200) {
         activeBtn = document.querySelector('.active-btn');
         hiddenBtn = document.querySelector('.hidden-btn');
 
+        // ----- arrow button
+
+        arrow = document.querySelector('.arrow');
+
         // for logo variable
 
         logo = document.querySelector('.logo');
@@ -72,6 +77,13 @@ if (window.innerWidth > 1200) {
         third = document.querySelector('#third').getBoundingClientRect().left;
         fourth = document.querySelector('#fourth').getBoundingClientRect().left;
 
+
+        // for pop up model section
+
+
+        insideHiddenDiv = document.querySelector('.inside-hidden-div');
+        closeModel = document.querySelector('.close-model');
+        openModel = document.querySelector('.open-model');
     }
 
     initialize();
@@ -107,6 +119,17 @@ if (window.innerWidth > 1200) {
 
         // for 150%
         forHundredFifty();
+
+
+        // for 1360px 
+        forOldDefaultResolution();
+
+
+        // for change in colors
+
+
+        forVideo();
+
 
 
     });
@@ -147,11 +170,26 @@ if (window.innerWidth > 1200) {
 
         //  for 1366
 
-        forSamarsClick();
+        forOldDefaultResolutionClick();
 
 
 
 
+    }
+
+    arrow.onclick = function(){
+        arrowBtnClick();
+    }
+
+    openModel.onclick = function(){
+
+        openModelBox();
+
+    }
+
+
+    closeModel.onclick = function(){
+        closeModelBox();
     }
 
     // ---------- navigation btns start
@@ -665,7 +703,7 @@ if (window.innerWidth > 1200) {
             // fourth
 
 
-            if (window.scrollY >= 4700 && window.scrollY < 5000) {
+            if (window.scrollY >= 4750 && window.scrollY < 5000) {
 
                 fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
                 fourthMobileThird.style = 'opacity:0; top:10%; left:3%';
@@ -684,7 +722,7 @@ if (window.innerWidth > 1200) {
 
             }
 
-            if (window.scrollY < 4700) {
+            if (window.scrollY < 4750) {
                 fourthMobileFirst.style = ' opacity: 1; top:20%;left:8%;';
                 fourthMobileSecond.style = 'opacity:0; top:10%; left:3%; ';
                 fourthMobileThird.style = 'opacity:0; top:10%; left:3%';
@@ -708,7 +746,7 @@ if (window.innerWidth > 1200) {
             // 
 
 
-            if (window.scrollY >= 5000 && window.scrollY >= 4700) {
+            if (window.scrollY >= 5000 && window.scrollY >= 4750) {
                 fourthMobileThird.style = 'opacity: 1 ;top:20%;left:8%; ';
                 fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
                 fourthMobileSecond.style = ' opacity:0; top:40%; left:3%';
@@ -729,7 +767,7 @@ if (window.innerWidth > 1200) {
 
             }
 
-            if (window.scrollY < 5000 && window.scrollY >= 4700) {
+            if (window.scrollY < 5000 && window.scrollY >= 4750) {
                 fourthMobileSecond.style = ' opacity: 1; top:20%;left:8%;';
                 fourthMobileThird.style = 'opacity:0; top:10%; left:3%; ';
                 fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
@@ -1360,8 +1398,7 @@ if (window.innerWidth > 1200) {
 
 
     forHundredFifty = () => {
-        if (window.innerWidth <= 1430) {
-
+        if (window.innerWidth <= 1430 && window.innerWidth != 1360) {
             // second
 
             if (window.scrollY >= 700 && window.scrollY < 900) {
@@ -1689,6 +1726,345 @@ if (window.innerWidth > 1200) {
         }
     }
 
+    forOldDefaultResolution = () => {
+        if (window.innerWidth == 1360 || window.innerWidth == 1366) {
+            
+            // second
+
+            if (window.scrollY >= 950 && window.scrollY < 1150) {
+                imageOne.style = 'opacity:0;';
+                imageTwo.style = "left:320px"
+                imageThree.style = "left:240px"
+
+                problemTwo.style = 'display:block';
+                problemOne.style = 'display:none';
+                problemThree.style = 'display:none'
+
+            }
+
+            if (window.scrollY < 950) {
+
+                imageOne.style = 'opacity:1';
+                imageTwo.style = "left:240px"
+                imageThree.style = "left:180px"
+
+
+                problemOne.style = 'display:block';
+                problemTwo.style = 'display:none';
+                problemThree.style = 'display:none';
+            }
+
+            if (window.scrollY >= 1150) {
+
+                imageTwo.style = 'opacity:0; left:320px';
+                imageThree.style = "left:320px"
+
+                problemOne.style = 'display:none';
+                problemTwo.style = 'display:none';
+                problemThree.style = 'display:block';
+            }
+
+            // third
+
+
+            if (window.scrollY >= 2000 && window.scrollY < 2300) {
+
+                jumping.style = ' opacity:0; top:40%; left:3%';
+                secondMagicMobile.style = 'opacity:0; top:10%; left:3%';
+                magicMobile.style = 'opacity: 1 ;top:20%;left:8%; ';
+
+
+                problem.style = 'opacity:0; top:10%; left:3%';
+
+                firstDescription.style = 'opacity:0;'
+                secondDescription.style = 'opacity:1;'
+                thirdDescription.style = 'opacity:0';
+                fourthDescription.style = 'opacity:0';
+
+            }
+
+            if (window.scrollY < 2000) {
+                jumping.style = ' opacity: 1; top:20%;left:8%;';
+                magicMobile.style = 'opacity:0; top:10%; left:3%; ';
+                secondMagicMobile.style = 'opacity:0; top:10%; left:3%';
+
+                problem.style = 'opacity:0; top:10%; left:3%';
+
+
+
+
+                firstDescription.style = 'opacity:1;'
+                secondDescription.style = 'opacity:0;'
+                thirdDescription.style = 'opacity:0';
+                fourthDescription.style = 'opacity:0';
+
+
+            }
+
+            // 
+
+
+            if (window.scrollY >= 2300 && window.scrollY >= 2000) {
+                secondMagicMobile.style = 'opacity: 1 ;top:20%;left:8%; ';
+                jumping.style = ' opacity:0; top:40%; left:3%';
+                magicMobile.style = ' opacity:0; top:40%; left:3%';
+
+                problem.style = 'opacity:0; top:10%; left:3%';
+
+
+
+                firstDescription.style = 'opacity:0;'
+                secondDescription.style = 'opacity:0;'
+                thirdDescription.style = 'opacity:1;'
+                fourthDescription.style = 'opacity:0';
+
+
+
+            }
+
+            if (window.scrollY < 2300 && window.scrollY >= 2000) {
+                magicMobile.style = ' opacity: 1; top:20%;left:8%;';
+                secondMagicMobile.style = 'opacity:0; top:10%; left:3%; ';
+                jumping.style = ' opacity:0; top:40%; left:3%';
+
+                problem.style = 'opacity:0; top:10%; left:3%';
+
+
+                firstDescription.style = 'opacity:0;'
+                secondDescription.style = 'opacity:1;'
+                thirdDescription.style = 'opacity:0;'
+                fourthDescription.style = 'opacity:0';
+
+            }
+
+            // 
+
+            if (window.scrollY >= 2700 && window.scrollY >= 2300) {
+
+                secondMagicMobile.style = 'opacity: 0 ;top:40%;left:3%; ';
+                jumping.style = ' opacity:0; top:40%; left:3%';
+                magicMobile.style = ' opacity:0; top:40%; left:3%';
+
+                problem.style = 'opacity:1; top:20%; left:8%';
+
+
+                firstDescription.style = 'opacity:0;'
+                secondDescription.style = 'opacity:0;'
+                thirdDescription.style = 'opacity:0;'
+                fourthDescription.style = 'opacity:1';
+
+            }
+
+            if (window.scrollY < 2700 && window.scrollY >= 2300) {
+
+                secondMagicMobile.style = 'opacity: 1 ;top:20%;left:8%; ';
+                jumping.style = ' opacity:0; top:40%; left:3%';
+                magicMobile.style = ' opacity:0; top:40%; left:3%';
+
+                problem.style = 'opacity:0; top:10%; left:3%';
+
+                firstDescription.style = 'opacity:0;'
+                secondDescription.style = 'opacity:0;'
+                thirdDescription.style = 'opacity:1;'
+                fourthDescription.style = 'opacity:0';
+
+
+
+
+
+            }
+
+            // fourth
+
+            if (window.scrollY >= 3700 && window.scrollY < 4100) {
+
+                fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
+                fourthMobileThird.style = 'opacity:0; top:10%; left:3%';
+                fourthMobileSecond.style = 'opacity: 1 ;top:20%;left:8%; ';
+
+
+                fourthMobileFourth.style = 'opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style = 'opacity:0; top:10%; left:3%';
+
+                fourthDescriptionFirst.style = 'opacity:0;'
+                fourthDescriptionSecond.style = 'opacity:1;'
+                fourthDescriptionThird.style = 'opacity:0';
+                fourthDescriptionFourth.style = 'opacity:0';
+                fourthDescriptionFifth.style = 'opacity:0';
+
+
+            }
+
+            if (window.scrollY < 3700) {
+                fourthMobileFirst.style = ' opacity: 1; top:20%;left:8%;';
+                fourthMobileSecond.style = 'opacity:0; top:10%; left:3%; ';
+                fourthMobileThird.style = 'opacity:0; top:10%; left:3%';
+
+                fourthMobileFourth.style = 'opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style = 'opacity:0; top:10%; left:3%';
+
+
+
+
+                fourthDescriptionFirst.style = 'opacity:1;'
+                fourthDescriptionSecond.style = 'opacity:0;'
+                fourthDescriptionThird.style = 'opacity:0';
+                fourthDescriptionFourth.style = 'opacity:0';
+                fourthDescriptionFifth.style = 'opacity:0';
+
+
+
+            }
+
+            // 
+
+
+            if (window.scrollY >= 4100 && window.scrollY >= 3700) {
+                fourthMobileThird.style = 'opacity: 1 ;top:20%;left:8%; ';
+                fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style = ' opacity:0; top:40%; left:3%';
+
+                fourthMobileFourth.style = 'opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style = 'opacity:0; top:10%; left:3%';
+
+
+
+                fourthDescriptionFirst.style = 'opacity:0;'
+                fourthDescriptionSecond.style = 'opacity:0;'
+                fourthDescriptionThird.style = 'opacity:1;'
+                fourthDescriptionFourth.style = 'opacity:0';
+                fourthDescriptionFifth.style = 'opacity:0';
+
+
+
+
+            }
+
+            if (window.scrollY < 4100 && window.scrollY >= 3700) {
+                fourthMobileSecond.style = ' opacity: 1; top:20%;left:8%;';
+                fourthMobileThird.style = 'opacity:0; top:10%; left:3%; ';
+                fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
+
+                fourthMobileFourth.style = 'opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style = 'opacity:0; top:10%; left:3%';
+
+
+                fourthDescriptionFirst.style = 'opacity:0;'
+                fourthDescriptionSecond.style = 'opacity:1;'
+                fourthDescriptionThird.style = 'opacity:0;'
+                fourthDescriptionFourth.style = 'opacity:0';
+                fourthDescriptionFifth.style = 'opacity:0';
+
+
+            }
+
+            // 
+
+            if (window.scrollY >= 3900 && window.scrollY >= 4100) {
+
+                fourthMobileThird.style = 'opacity: 0 ;top:40%;left:3%; ';
+                fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style = ' opacity:0; top:40%; left:3%';
+
+                fourthMobileFourth.style = 'opacity:1; top:20%; left:8%';
+                fourthMobileFifth.style = 'opacity:0; top:10%; left:3%';
+
+
+                fourthDescriptionFirst.style = 'opacity:0;'
+                fourthDescriptionSecond.style = 'opacity:0;'
+                fourthDescriptionThird.style = 'opacity:0;'
+                fourthDescriptionFourth.style = 'opacity:1';
+                fourthDescriptionFifth.style = 'opacity:0';
+
+
+            }
+
+            if (window.scrollY < 3900 && window.scrollY >= 4100) {
+
+                fourthMobileThird.style = 'opacity: 1 ;top:20%;left:8%; ';
+                fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style = ' opacity:0; top:40%; left:3%';
+
+                fourthMobileFourth.style = 'opacity:0; top:10%; left:3%';
+                fourthMobileFifth.style = 'opacity:0; top:10%; left:3%';
+
+                fourthDescriptionFirst.style = 'opacity:0;'
+                fourthDescriptionSecond.style = 'opacity:0;'
+                fourthDescriptionThird.style = 'opacity:1;'
+                fourthDescriptionFourth.style = 'opacity:0';
+                fourthDescriptionFifth.style = 'opacity:0';
+
+
+
+            }
+
+
+            if (window.scrollY >= 4500 && window.scrollY >= 3900) {
+
+                fourthMobileThird.style = 'opacity: 0 ;top:40%;left:3%; ';
+                fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style = ' opacity:0; top:40%; left:3%';
+
+                fourthMobileFourth.style = 'opacity:0; top:40%; left:3%';
+                fourthMobileFifth.style = 'opacity:1; top:20%; left:8%';
+
+
+                fourthDescriptionFirst.style = 'opacity:0;'
+                fourthDescriptionSecond.style = 'opacity:0;'
+                fourthDescriptionThird.style = 'opacity:0;'
+                fourthDescriptionFourth.style = 'opacity:0';
+                fourthDescriptionFifth.style = 'opacity:1';
+
+            }
+
+            if (window.scrollY < 4500 && window.scrollY >= 3900) {
+
+                fourthMobileThird.style = 'opacity: 0 ;top:40%;left:3%; ';
+                fourthMobileFirst.style = ' opacity:0; top:40%; left:3%';
+                fourthMobileSecond.style = ' opacity:0; top:40%; left:3%';
+
+                fourthMobileFourth.style = 'opacity:1; top:20%; left:8%';
+                fourthMobileFifth.style = 'opacity:0; top:10%; left:3%';
+
+                fourthDescriptionFirst.style = 'opacity:0;'
+                fourthDescriptionSecond.style = 'opacity:0;'
+                fourthDescriptionThird.style = 'opacity:0;'
+                fourthDescriptionFourth.style = 'opacity:1';
+                fourthDescriptionFifth.style = 'opacity:0';
+
+
+
+            }
+
+
+
+
+
+            // for mouse and hand 
+
+            if (window.scrollY >= 4500) {
+                activeBtn.style = 'display:none';
+                hiddenBtn.style = 'display:block';
+            }
+
+
+            if (window.scrollY < 4500) {
+                activeBtn.style = 'display:block';
+                hiddenBtn.style = 'display:none';
+            }
+
+        }
+    }
+
+
+    forVideo = ()=>{
+        if(window.scrollY > 4050){
+            openModel.style="color:#3b6dcc;"
+        }else{
+            openModel.style="color:#fff;"
+        }
+    }
+
 
 
     // scroll
@@ -1702,6 +2078,51 @@ if (window.innerWidth > 1200) {
     }
 
     // click animation
+
+    arrowBtnClick = ()=>{
+        if (window.innerWidth < 2133) {
+
+            window.scrollTo({
+                top: second - 1000,
+                behavior: 'smooth'
+            });
+        }
+
+        if (window.innerWidth >= 2133){
+            window.scrollTo({
+                top: second - 1050,
+                behavior: 'smooth'
+            });
+        }
+
+        if (window.innerWidth <= 1745) {
+            window.scrollTo({
+                top: second - 900,
+                behavior: 'smooth'
+            });
+        }
+
+        if (window.innerWidth <= 1630 && window.innerWidth > 1430){
+            window.scrollTo({
+                top: second - 700,
+                behavior: 'smooth'
+            });
+        }
+
+        if (window.innerWidth <= 1430 && window.innerWidth != 1360){
+            window.scrollTo({
+                top: second - 600,
+                behavior: 'smooth'
+            });
+        }
+
+        if (window.innerWidth == 1360 || window.innerWidth == 1366){
+            window.scrollTo({
+                top: second - 980,
+                behavior: 'smooth'
+            });
+        }
+    }
 
     forDefaultClick = () => {
         if (window.innerWidth < 2133) {  //window.innerWidth >= 1746 && 
@@ -1817,7 +2238,8 @@ if (window.innerWidth > 1200) {
     }
 
     forHundredFiftyClick = () => {
-        if (window.innerWidth <= 1430) {
+        if (window.innerWidth <= 1430 && window.innerWidth != 1360) {
+            // alert('f');
 
             if (window.scrollY <= 667) {
 
@@ -1851,31 +2273,31 @@ if (window.innerWidth > 1200) {
         }
     }
 
-    forSamarsClick = ()=>{
-        if (window.innerWidth <= 1366) {
+    forOldDefaultResolutionClick = ()=>{
+        if (window.innerWidth == 1360 || window.innerWidth == 1366) {
 
-            if (window.scrollY <= 660) {
+            if (window.scrollY <= 710) {
 
                 window.scrollTo({
-                    top: second - 700,
+                    top: second - 980,
                     behavior: 'smooth'
                 });
             }
 
-            if (window.scrollY > 660 && window.scrollY <= 1436) {
+            if (window.scrollY > 710 && window.scrollY <= 1830) {
                 window.scrollTo({
-                    top: third - 1200,
+                    top: third - 2000,
                     behavior: 'smooth'
                 });
             }
 
-            if (window.scrollY > 1436) {
+            if (window.scrollY > 1830) {
                 window.scrollTo({
-                    top: fourth - 1250,
+                    top: fourth - 2200,
                     behavior: 'smooth'
                 });
             }
-            if (window.scrollY > 2800) {
+            if (window.scrollY > 3440) {
                 window.scrollTo({
                     top: 4600,
                     behavior: 'smooth'
@@ -1888,8 +2310,15 @@ if (window.innerWidth > 1200) {
     }
 
 
-// store in local caching
-    // -------------------
+    openModelBox = ()=>{
+        insideHiddenDiv.style='display:block';
+    }
+
+    closeModelBox = ()=>{
+        insideHiddenDiv.style='display:none';
+    }
+
+
 }
 
 

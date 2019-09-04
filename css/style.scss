@@ -3,7 +3,7 @@
 
 $paragraph: 34px;
 
-$primary-color: rgb(59, 109, 204);
+$primary-color: #3b6dcc;
 $gradient-color: rgb(47, 176, 221);
 $secondary-color: #fff;
 
@@ -105,7 +105,7 @@ img{
                 z-index: 500;
 
                 position: absolute;
-                left: -8px;
+                left: 0px;
                 bottom: -5px;
 
                 animation : hand 4s ease-in-out 3s infinite;
@@ -150,31 +150,136 @@ img{
 
 @keyframes hand {
     0%{
-        left: -8px;
+        
         bottom: -5px;
     }
 
     40%{
-        left:-8px;
         bottom: 5px;
     }
     
     60%{
-        left:-8px;
         bottom: 0px;
     }
 
     80%{
-        left:-8px;
         bottom: 5px;
     }
 
     100%{
-        left: -8px;
+        
         bottom: -5px;
     }
 
 }
+
+@keyframes leftRight{
+    0%{
+        right: 100px;
+    }
+    
+    40%{
+        right: 80px;
+   
+       
+    }
+
+    100%{
+       right:100px;
+        
+       
+    }
+}
+
+
+// video fixed start
+
+.video-fixed{
+    position: fixed;
+    top:60px;
+    right: 120px;
+    z-index: 200;
+
+    div{
+        animation: grow 4s ease-in-out 3s infinite;
+        border: 0;
+        background: transparent;
+        color:$secondary-color;
+        outline: 0;
+        cursor: pointer;
+        font-size: 30px;
+        
+        small{
+            position: absolute;
+            top: -50px;
+            padding: 0 4px;
+            left: -120px;
+            width: 160px;
+            text-align: center;
+            font-size: 16px;
+            background: $secondary-color;
+            color: $primary-color;
+            border-radius: 10px;
+            display: none;
+            height: 38px;
+            line-height: 38px;
+
+            &::before{
+                border-left: 6px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 8px solid $secondary-color;
+                position: absolute;
+                top: 100%;
+                right: 18px;
+                content: '';
+            }
+        }
+
+        &:hover{
+            small{
+                display: block;
+            }
+        }
+
+
+      
+    }
+    .inside-hidden-div{
+        width: 60vw;
+        height: 70vh;
+        position: absolute;
+        top:0;
+        right:200%;
+        // left: -10%;
+        cursor: default;
+        animation: none;
+        border-radius: 10px;
+        display: none;
+
+
+    
+        span{
+            position: absolute;
+            top: -5px;
+            right: 15px;
+            color: $secondary-color;
+            cursor: pointer;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+ 
+
+}
+
+
+
+
+// video fixed ends
+
+
+// container start
 
 .container{
     width: 100%;
@@ -251,9 +356,19 @@ img{
 
             
             }
-       }
+        }
+
+        .arrow{
+            position: absolute;
+            right: 100px;
+            top: 50%;
+            color:$secondary-color;
+            font-size: 38px;
+            cursor: pointer;
+            animation: leftRight 4s ease-in-out 3s infinite;
+        }
     
-       }
+    }
 
    #second{
     //    background: green;
@@ -483,7 +598,7 @@ img{
 }
 
 
-@media(max-width:1630px){
+@media(max-width:1630px){  // 1630
 
  
     .container{

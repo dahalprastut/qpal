@@ -18,13 +18,27 @@
         <div class="third-fixed">
             <button class="active-btn">
                 <span class="mouseSpan"><img src="images/mouse1.png" alt="mouse"></span>
-                <span class="handSpan"><img src="images/hand1.png" alt="mouse"></span>
+                <span class="handSpan"><img src="images/righthand.png" alt="mouse"></span>
             </button>
 
             <button class="hidden-btn">
                 <span><img src="images/arrow_left.png" alt=""></span>
             </button>
         </div>
+        <div class="video-fixed">
+            <div class="open-model">
+                <small>Click For Youtube</small>
+                <i class="fas fa-info-circle"></i>
+
+              
+            </div>
+            <div class="inside-hidden-div">
+                <span class="close-model"><i class="fas fa-times"></i></span>
+                <iframe width="99%" height="100%" src="https://www.youtube.com/embed/BSfft1JUeNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    
         <div class="container">
             <div class="items"
             data-0="transform: translate(0%, 0%)"
@@ -51,6 +65,9 @@
                                 <img src="images/google.png" alt="appstore">
                             </a>
                         </div>
+                    </div>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
                 <div class="boxes" id="second">
@@ -107,12 +124,12 @@
                         </div>
 
                         <div class="second-description second-description-third">
-                            <h2>New Definition for Queue</h2>
+                            <h2>New Definition for the app</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
 
                         <div class="third-description third-description-third">
-                            <h2>Old Definition for Queue</h2>
+                            <h2>Old Definition for the app</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
 
@@ -155,12 +172,12 @@
                         </div>
 
                         <div class="second-description second-description-fourth">
-                            <h2>New Definition for Queue</h2>
+                            <h2>New Definition for the app</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
 
                         <div class="third-description third-description-fourth">
-                            <h2>Old Definition for Queue</h2>
+                            <h2>Old Definition for the app</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, odio doloremque. Accusamus earum minus, atque autem est suscipit quam consequuntur.</p>
                         </div>
 
